@@ -13,13 +13,15 @@ class CharactersService: BaseService {
     
     static let shared = CharactersService()
     
-    internal func getCharacters(limit: Int, offSet: Int, apiKey: String, success: @escaping ([Character]) -> Void, failure: @escaping FAILURE_HANDLER) {
+    internal func getCharacters(limit: Int, offSet: Int, timeStamp: String, apiKey: String, hash: String, success: @escaping ([Character]) -> Void, failure: @escaping FAILURE_HANDLER) {
         let requestHeader = self.createHeader()
         let requestUrl = self.createUrlWithPath(Constants.API.PATH.CHARACTERS)
         let requestParameters : [String : Any] = [
-            Constants.API.PARAMETERS.LIMIT : limit,
-            Constants.API.PARAMETERS.OFFSET : offSet,
-            Constants.API.PARAMETERS.API_KEY : apiKey
+            Constants.API.PARAMETER.LIMIT : limit,
+            Constants.API.PARAMETER.OFFSET : offSet,
+            Constants.API.PARAMETER.API_KEY : apiKey,
+            Constants.API.PARAMETER.HASH : hash,
+            Constants.API.PARAMETER.TIME_STAMP : timeStamp
         ]
         
         Alamofire.request(requestUrl, method: HTTPMethod.get, parameters: requestParameters, encoding: URLEncoding.queryString, headers: requestHeader)

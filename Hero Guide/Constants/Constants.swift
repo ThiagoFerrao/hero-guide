@@ -11,16 +11,23 @@ import Foundation
 struct Constants {
     
     struct API {
-        static let URL = "http://gateway.marvel.com/v1/public"
+        static let URL = "https://gateway.marvel.com/v1/public"
+        
+        struct KEY {
+            static let PRIVATE = "aba4decb92afadfd60d2d414bb45bbe88110e137"
+            static let PUBLIC = "7e6505c9d7f0e89fac001bb8b163b70a"
+        }
         
         struct PATH {
             static let CHARACTERS = "/characters"
         }
         
-        struct PARAMETERS {
+        struct PARAMETER {
             static let LIMIT = "limit"
             static let OFFSET = "offset"
             static let API_KEY = "apikey"
+            static let HASH = "hash"
+            static let TIME_STAMP = "ts"
         }
         
         struct LIMIT {
