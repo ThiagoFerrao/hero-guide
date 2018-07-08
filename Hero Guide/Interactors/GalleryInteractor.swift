@@ -10,6 +10,13 @@ import Foundation
 
 class GalleryInteractor: NSObject {
     
+    var interactorOutput : GalleryInteractorOutput?
+    
+    init(output: GalleryInteractorOutput) {
+        super.init()
+        
+        self.interactorOutput = output
+    }
 }
 
 

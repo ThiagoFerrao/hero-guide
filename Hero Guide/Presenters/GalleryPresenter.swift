@@ -10,6 +10,16 @@ import Foundation
 
 class GalleryPresenter: NSObject {
     
+    var userInterface   : GalleryViewInterface?
+    var interactorInput : GalleryInteractorInput?
+    
+    init(userInterface: GalleryViewInterface) {
+        super.init()
+        
+        self.userInterface = userInterface
+        self.interactorInput = GalleryInteractor(output: self)
+    }
+    
 }
 
 

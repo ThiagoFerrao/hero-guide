@@ -12,8 +12,12 @@ class GalleryViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var eventHandler: GalleryViewHandlerInterface?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        eventHandler = GalleryPresenter(userInterface: self)
     }
 }
 
