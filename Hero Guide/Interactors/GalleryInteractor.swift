@@ -10,7 +10,8 @@ import Foundation
 
 class GalleryInteractor: NSObject {
     
-    var interactorOutput : GalleryInteractorOutput?
+    private var interactorOutput : GalleryInteractorOutput?
+    private var currentOffSet = 0
     
     init(output: GalleryInteractorOutput) {
         super.init()
@@ -23,5 +24,14 @@ class GalleryInteractor: NSObject {
 // MARK: GalleryInteractorInput
 
 extension GalleryInteractor: GalleryInteractorInput {
-    
+    func loadCharacters() {
+        currentOffSet += 1
+        CharactersService.shared.getCharacters(limit: Constants.API.LIMIT.DEFAULT, offSet: currentOffSet, apiKey: ""
+            , success: { (characterList) in
+                print(characterList)
+                
+        }) { (error) in
+            print(error)
+        }
+    }
 }

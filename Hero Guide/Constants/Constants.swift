@@ -22,6 +22,10 @@ struct Constants {
             static let OFFSET = "offset"
             static let API_KEY = "apikey"
         }
+        
+        struct LIMIT {
+            static let DEFAULT = 15
+        }
     }
     
     struct SEGUE_IDENTIFIER {

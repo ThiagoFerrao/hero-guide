@@ -9,5 +9,6 @@
 import Foundation
 
 protocol GalleryViewHandlerInterface {
-    
+    func viewDidLoad()
+    func loadMoreData()
 }

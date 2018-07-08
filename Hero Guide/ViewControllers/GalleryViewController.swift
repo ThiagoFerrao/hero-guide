@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import CCBottomRefreshControl
 
 class GalleryViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var eventHandler: GalleryViewHandlerInterface?
+    private var eventHandler: GalleryViewHandlerInterface?
+    private let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         eventHandler = GalleryPresenter(userInterface: self)
+        eventHandler?.viewDidLoad()
+    }
+    
+    
+    // MARK: Private Methods
+    
+    @objc private func refreshCollectionRequested() {
+        eventHandler?.loadMoreData()
     }
 }
 
@@ -25,7 +35,10 @@ class GalleryViewController: UIViewController {
 // MARK: GalleryViewInterface
 
 extension GalleryViewController: GalleryViewInterface {
-    
+    func setupContent() {
+        refreshControl.addTarget(self, action: #selector(refreshCollectionRequested), for: .valueChanged)
+        collectionView.bottomRefreshControl = refreshControl
+    }
 }
 
 

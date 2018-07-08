@@ -9,7 +9,7 @@
 import Foundation
 
 protocol GalleryInteractorInput {
-    
+    func loadCharacters()
 }
 
 protocol GalleryInteractorOutput {

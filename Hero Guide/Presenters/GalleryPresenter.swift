@@ -10,8 +10,8 @@ import Foundation
 
 class GalleryPresenter: NSObject {
     
-    var userInterface   : GalleryViewInterface?
-    var interactorInput : GalleryInteractorInput?
+    private var userInterface   : GalleryViewInterface?
+    private var interactorInput : GalleryInteractorInput?
     
     init(userInterface: GalleryViewInterface) {
         super.init()
@@ -26,7 +26,14 @@ class GalleryPresenter: NSObject {
 // MARK: GalleryViewHandlerInterface
 
 extension GalleryPresenter: GalleryViewHandlerInterface {
+    func viewDidLoad() {
+        userInterface?.setupContent()
+        interactorInput?.loadCharacters()
+    }
     
+    func loadMoreData() {
+        interactorInput?.loadCharacters()
+    }
 }
 
 
