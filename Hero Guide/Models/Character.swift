@@ -11,6 +11,7 @@ import ObjectMapper
 
 class Character: Mappable {
     var name: String?
+    var description: String?
     var thumbnailPath: String?
     var thumbnailExtension: String?
     
@@ -20,6 +21,7 @@ class Character: Mappable {
     
     func mapping(map: Map) {
         name <- map["name"]
+        description <- map["description"]
         thumbnailPath <- map["thumbnail.path"]
         thumbnailExtension <- map["thumbnail.extension"]
     }

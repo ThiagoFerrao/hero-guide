@@ -32,7 +32,7 @@ class GalleryInteractor: NSObject {
         let privateKey = Constants.API.KEY.PRIVATE
         let publicKey = Constants.API.KEY.PUBLIC
         
-        return (timeStamp, MD5(timeStamp + privateKey + publicKey))
+        return (timeStamp, MD5(timeStamp + privateKey + publicKey).lowercased())
     }
 }
 
@@ -44,7 +44,11 @@ extension GalleryInteractor: GalleryInteractorInput {
         incrementCurrentOffSetValue()
         let (timeStamp, hash) = getRequestTimeStampAndHash()
         
-        CharactersService.shared.getCharacters(limit: Constants.API.LIMIT.DEFAULT, offSet: currentOffSet, timeStamp: timeStamp, apiKey: Constants.API.KEY.PUBLIC, hash: hash.lowercased()
+        CharactersService.shared.getCharacters(limit: Constants.API.LIMIT.DEFAULT
+            , offSet: currentOffSet
+            , timeStamp: timeStamp
+            , apiKey: Constants.API.KEY.PUBLIC
+            , hash: hash
             , success: { (characterList) in
                 print(characterList)
                 

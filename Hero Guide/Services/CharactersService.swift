@@ -13,7 +13,10 @@ class CharactersService: BaseService {
     
     static let shared = CharactersService()
     
-    internal func getCharacters(limit: Int, offSet: Int, timeStamp: String, apiKey: String, hash: String, success: @escaping ([Character]) -> Void, failure: @escaping FAILURE_HANDLER) {
+    internal func getCharacters(limit: Int, offSet: Int, timeStamp: String, apiKey: String, hash: String
+        , success: @escaping ([Character]) -> Void
+        , failure: @escaping FAILURE_HANDLER) {
+        
         let requestHeader = self.createHeader()
         let requestUrl = self.createUrlWithPath(Constants.API.PATH.CHARACTERS)
         let requestParameters : [String : Any] = [
@@ -40,12 +43,12 @@ class CharactersService: BaseService {
                         return
                     }
                     
-                    guard let characters = charactersResultData.characters else {
+                    guard let characterList = charactersResultData.characters else {
                         failure(NSError(domain: "Unable to get the character list from the charactersResultData", code: dataResponse.response?.statusCode ?? 0, userInfo: nil))
                         return
                     }
                     
-                    success(characters)
+                    success(characterList)
                     
                 case .failure(let error):
                     failure(error)
