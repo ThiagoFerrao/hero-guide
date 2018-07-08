@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GalleryCollectionViewCell: UICollectionViewCell {
 
@@ -15,7 +16,15 @@ class GalleryCollectionViewCell: UICollectionViewCell {
     
     var character: Character? {
         didSet {
+            characterNameLabel.text = character?.name
             
+            let imageURL = character?.getStandardImageURL()
+            
+            characterImage.kf.setImage(with: imageURL
+                , placeholder: UIImage(named: "icon_app")
+                , options: [
+                    .transition(.fade(1))
+                ], progressBlock: nil, completionHandler: nil)
         }
     }
 }

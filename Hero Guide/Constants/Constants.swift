@@ -48,4 +48,12 @@ struct Constants {
         static let ACCENT = "color_accent"
         static let BACKGROUND = "color_background"
     }
+    
+    struct IMAGE {
+        static let APP_ICON = "icon_app"
+        
+        struct MARVEL_PARAMETER {
+            static let STANDARD_PATH = "/standard_amazing"
+        }
+    }
 }

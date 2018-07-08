@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,14 +38,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uAW-JH-8uM">
-                                                    <rect key="frame" x="2" y="2" width="96" height="100"/>
+                                                    <rect key="frame" x="5" y="5" width="90" height="90"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="ysQ-rX-EoR"/>
+                                                        <constraint firstAttribute="width" secondItem="uAW-JH-8uM" secondAttribute="height" multiplier="1:1" id="h2L-ht-mth"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mve-kT-iA7">
-                                                    <rect key="frame" x="2" y="104" width="96" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Mve-kT-iA7">
+                                                    <rect key="frame" x="5" y="100" width="90" height="37"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" name="color_accent"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -52,12 +59,12 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="Mve-kT-iA7" firstAttribute="leading" secondItem="uAW-JH-8uM" secondAttribute="leading" id="0MN-7B-VE0"/>
-                                            <constraint firstItem="uAW-JH-8uM" firstAttribute="top" secondItem="EhZ-lP-sBO" secondAttribute="top" constant="2" id="BeU-ZA-3HI"/>
+                                            <constraint firstItem="uAW-JH-8uM" firstAttribute="top" secondItem="EhZ-lP-sBO" secondAttribute="top" constant="5" id="BeU-ZA-3HI"/>
                                             <constraint firstItem="Mve-kT-iA7" firstAttribute="trailing" secondItem="uAW-JH-8uM" secondAttribute="trailing" id="Rta-zJ-qZT"/>
-                                            <constraint firstAttribute="bottom" secondItem="Mve-kT-iA7" secondAttribute="bottom" constant="2" id="U1O-gZ-0BE"/>
-                                            <constraint firstItem="uAW-JH-8uM" firstAttribute="leading" secondItem="EhZ-lP-sBO" secondAttribute="leading" constant="2" id="eQ4-dq-X3D"/>
-                                            <constraint firstItem="Mve-kT-iA7" firstAttribute="top" secondItem="uAW-JH-8uM" secondAttribute="bottom" constant="2" id="mqA-CN-Hqe"/>
-                                            <constraint firstAttribute="trailing" secondItem="uAW-JH-8uM" secondAttribute="trailing" constant="2" id="zMD-nf-9it"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mve-kT-iA7" secondAttribute="bottom" constant="3" id="U1O-gZ-0BE"/>
+                                            <constraint firstItem="uAW-JH-8uM" firstAttribute="leading" secondItem="EhZ-lP-sBO" secondAttribute="leading" constant="5" id="eQ4-dq-X3D"/>
+                                            <constraint firstItem="Mve-kT-iA7" firstAttribute="top" secondItem="uAW-JH-8uM" secondAttribute="bottom" constant="5" id="mqA-CN-Hqe"/>
+                                            <constraint firstAttribute="trailing" secondItem="uAW-JH-8uM" secondAttribute="trailing" constant="5" id="zMD-nf-9it"/>
                                         </constraints>
                                         <size key="customSize" width="100" height="140"/>
                                         <connections>

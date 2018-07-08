@@ -25,4 +25,18 @@ class Character: Mappable {
         thumbnailPath <- map["thumbnail.path"]
         thumbnailExtension <- map["thumbnail.extension"]
     }
+    
+    
+    // MARK: Public Methods
+    
+    func getStandardImageURL() -> URL? {
+        var secureThumbnailPath = thumbnailPath
+        
+        if thumbnailPath?.contains("http://") ?? false {
+            secureThumbnailPath = thumbnailPath?.replacingOccurrences(of: "http://", with: "https://", options: .literal)
+        }
+        
+        let imageUrlString = "\(secureThumbnailPath ?? "")\(Constants.IMAGE.MARVEL_PARAMETER.STANDARD_PATH).\(thumbnailExtension ?? "")"
+        return URL(string: imageUrlString)
+    }
 }
