@@ -13,8 +13,14 @@
 		AF51D9D820F28AEB008F38DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9D720F28AEB008F38DD /* Constants.swift */; };
 		AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */; };
 		AF51D9DD20F28EE6008F38DD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9DC20F28EE6008F38DD /* Character.swift */; };
+		AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9E620F29776008F38DD /* GalleryViewInterface.swift */; };
+		AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9E820F297A9008F38DD /* GalleryViewHandlerInterface.swift */; };
+		AF51D9EB20F297BF008F38DD /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9EA20F297BF008F38DD /* GalleryPresenter.swift */; };
+		AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9EC20F29804008F38DD /* GalleryInteractorIO.swift */; };
+		AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9EE20F29840008F38DD /* GalleryInteractor.swift */; };
+		AF51D9F120F298BD008F38DD /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9F020F298BD008F38DD /* GalleryCollectionViewCell.swift */; };
 		AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E020F27F8C009DC102 /* AppDelegate.swift */; };
-		AF5D39E320F27F8C009DC102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E220F27F8C009DC102 /* ViewController.swift */; };
+		AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */; };
 		AF5D39E620F27F8C009DC102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E420F27F8C009DC102 /* Main.storyboard */; };
 		AF5D39E820F27F8C009DC102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E720F27F8C009DC102 /* Assets.xcassets */; };
 		AF5D39EB20F27F8C009DC102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E920F27F8C009DC102 /* LaunchScreen.storyboard */; };
@@ -51,9 +57,15 @@
 		AF51D9D720F28AEB008F38DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResultData.swift; sourceTree = "<group>"; };
 		AF51D9DC20F28EE6008F38DD /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AF51D9E620F29776008F38DD /* GalleryViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewInterface.swift; sourceTree = "<group>"; };
+		AF51D9E820F297A9008F38DD /* GalleryViewHandlerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewHandlerInterface.swift; sourceTree = "<group>"; };
+		AF51D9EA20F297BF008F38DD /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
+		AF51D9EC20F29804008F38DD /* GalleryInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractorIO.swift; sourceTree = "<group>"; };
+		AF51D9EE20F29840008F38DD /* GalleryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInteractor.swift; sourceTree = "<group>"; };
+		AF51D9F020F298BD008F38DD /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF5D39DD20F27F8C009DC102 /* Hero Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hero Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D39E020F27F8C009DC102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF5D39E220F27F8C009DC102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		AF5D39E520F27F8C009DC102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF5D39E720F27F8C009DC102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF5D39EA20F27F8C009DC102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,9 +155,57 @@
 		AF51D9DF20F2929C008F38DD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				AF5D39E220F27F8C009DC102 /* ViewController.swift */,
+				AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF51D9E020F296AE008F38DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF51D9E620F29776008F38DD /* GalleryViewInterface.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF51D9E120F296D1008F38DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AF51D9F020F298BD008F38DD /* GalleryCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AF51D9E220F296DE008F38DD /* ViewHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				AF51D9E820F297A9008F38DD /* GalleryViewHandlerInterface.swift */,
+			);
+			path = ViewHandlers;
+			sourceTree = "<group>";
+		};
+		AF51D9E320F296F0008F38DD /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				AF51D9EA20F297BF008F38DD /* GalleryPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		AF51D9E420F296FB008F38DD /* InteractorIOs */ = {
+			isa = PBXGroup;
+			children = (
+				AF51D9EC20F29804008F38DD /* GalleryInteractorIO.swift */,
+			);
+			path = InteractorIOs;
+			sourceTree = "<group>";
+		};
+		AF51D9E520F29708008F38DD /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				AF51D9EE20F29840008F38DD /* GalleryInteractor.swift */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		AF5D39D420F27F8C009DC102 = {
@@ -173,7 +233,13 @@
 		AF5D39DF20F27F8C009DC102 /* Hero Guide */ = {
 			isa = PBXGroup;
 			children = (
+				AF51D9E020F296AE008F38DD /* Views */,
 				AF51D9DF20F2929C008F38DD /* ViewControllers */,
+				AF51D9E120F296D1008F38DD /* Cells */,
+				AF51D9E220F296DE008F38DD /* ViewHandlers */,
+				AF51D9E320F296F0008F38DD /* Presenters */,
+				AF51D9E420F296FB008F38DD /* InteractorIOs */,
+				AF51D9E520F29708008F38DD /* Interactors */,
 				AF51D9D120F28A2B008F38DD /* Services */,
 				AF51D9D920F28E23008F38DD /* Models */,
 				AF51D9D620F28AD6008F38DD /* Constants */,
@@ -471,11 +537,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF51D9D820F28AEB008F38DD /* Constants.swift in Sources */,
-				AF5D39E320F27F8C009DC102 /* ViewController.swift in Sources */,
+				AF51D9EB20F297BF008F38DD /* GalleryPresenter.swift in Sources */,
+				AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */,
+				AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */,
+				AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */,
+				AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */,
 				AF51D9DD20F28EE6008F38DD /* Character.swift in Sources */,
+				AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */,
 				AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */,
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,
 				AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */,
+				AF51D9F120F298BD008F38DD /* GalleryCollectionViewCell.swift in Sources */,
 				AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
