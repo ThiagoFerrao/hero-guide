@@ -42,4 +42,10 @@ struct Constants {
     struct REUSABLE_IDENTIFIER {
         static let GALLERY_CELL = "GalleryCell"
     }
+    
+    struct COLOR {
+        static let PRIMARY = "color_primary"
+        static let ACCENT = "color_accent"
+        static let BACKGROUND = "color_background"
+    }
 }

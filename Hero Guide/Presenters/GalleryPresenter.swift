@@ -45,7 +45,6 @@ extension GalleryPresenter: GalleryViewHandlerInterface {
     }
     
     func loadMoreData() {
-        userInterface?.showLoading()
         interactorInput?.getCharacters()
     }
 }
@@ -57,10 +56,12 @@ extension GalleryPresenter: GalleryInteractorOutput {
     func loadCharacters(_ characterList: [Character]) {
         userInterface?.updateCharacterList(characterList)
         finishFullScreenLoading()
+        userInterface?.endRefreshing()
     }
     
     func requestFailed() {
-        userInterface?.hideLoading()
+        userInterface?.endRefreshing()
+        
         let alertController = UIAlertController(title: "Ops!"
             , message: "An error occurred during the request :(\nPlease, try again later"
             , preferredStyle: UIAlertControllerStyle.alert)

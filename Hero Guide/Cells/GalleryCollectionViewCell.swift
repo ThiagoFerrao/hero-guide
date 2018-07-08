@@ -13,5 +13,9 @@ class GalleryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var characterNameLabel: UILabel!
     
-    
+    var character: Character? {
+        didSet {
+            
+        }
+    }
 }

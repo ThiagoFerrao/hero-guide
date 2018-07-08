@@ -13,7 +13,8 @@ protocol GalleryViewInterface {
     func hideLoading()
     func showCollectionView()
     func hideCollectionView()
+    func endRefreshing()
     func setupContent()
     func showAlert(_ alertController: UIAlertController)
-    func updateCharacterList(_ characterList: [Character])
+    func updateCharacterList(_ newCharacterList: [Character])
 }
