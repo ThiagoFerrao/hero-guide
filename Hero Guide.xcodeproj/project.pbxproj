@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		896FD3EAEE95337D02DAB659 /* Pods_Hero_Guide_Hero_GuideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E70C4A577EEE9CE0EB67FBA /* Pods_Hero_Guide_Hero_GuideTests.framework */; };
 		AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E020F27F8C009DC102 /* AppDelegate.swift */; };
 		AF5D39E320F27F8C009DC102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E220F27F8C009DC102 /* ViewController.swift */; };
 		AF5D39E620F27F8C009DC102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E420F27F8C009DC102 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		AF5D39EB20F27F8C009DC102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E920F27F8C009DC102 /* LaunchScreen.storyboard */; };
 		AF5D39F620F27F8C009DC102 /* Hero_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39F520F27F8C009DC102 /* Hero_GuideTests.swift */; };
 		AF5D3A0120F27F8C009DC102 /* Hero_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */; };
+		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF8F9EF1D19A4E42DA1D8A9 /* Pods-Hero Guide-Hero GuideTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide-Hero GuideTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide-Hero GuideTests/Pods-Hero Guide-Hero GuideTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E70C4A577EEE9CE0EB67FBA /* Pods_Hero_Guide_Hero_GuideTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hero_Guide_Hero_GuideTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4739CC735D997955FD4E2BEB /* Pods-Hero Guide-Hero GuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide-Hero GuideTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide-Hero GuideTests/Pods-Hero Guide-Hero GuideTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hero_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B3AC92116D166700E1422C /* Pods-Hero Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.release.xcconfig"; sourceTree = "<group>"; };
 		AF5D39DD20F27F8C009DC102 /* Hero Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hero Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D39E020F27F8C009DC102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF5D39E220F27F8C009DC102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		AF5D39FC20F27F8C009DC102 /* Hero GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hero GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero_GuideUITests.swift; sourceTree = "<group>"; };
 		AF5D3A0220F27F8C009DC102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				896FD3EAEE95337D02DAB659 /* Pods_Hero_Guide_Hero_GuideTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33A1592DE4A0B71DFBB0D084 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */,
+				A2B3AC92116D166700E1422C /* Pods-Hero Guide.release.xcconfig */,
+				0AF8F9EF1D19A4E42DA1D8A9 /* Pods-Hero Guide-Hero GuideTests.debug.xcconfig */,
+				4739CC735D997955FD4E2BEB /* Pods-Hero Guide-Hero GuideTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF5D39D420F27F8C009DC102 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +102,8 @@
 				AF5D39F420F27F8C009DC102 /* Hero GuideTests */,
 				AF5D39FF20F27F8C009DC102 /* Hero GuideUITests */,
 				AF5D39DE20F27F8C009DC102 /* Products */,
+				33A1592DE4A0B71DFBB0D084 /* Pods */,
+				DFD6CCF64B4526496847F64D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +148,15 @@
 			path = "Hero GuideUITests";
 			sourceTree = "<group>";
 		};
+		DFD6CCF64B4526496847F64D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */,
+				0E70C4A577EEE9CE0EB67FBA /* Pods_Hero_Guide_Hero_GuideTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF5D3A0520F27F8C009DC102 /* Build configuration list for PBXNativeTarget "Hero Guide" */;
 			buildPhases = (
+				CDAABBECD39102F0E9A1AC46 /* [CP] Check Pods Manifest.lock */,
 				AF5D39D920F27F8C009DC102 /* Sources */,
 				AF5D39DA20F27F8C009DC102 /* Frameworks */,
 				AF5D39DB20F27F8C009DC102 /* Resources */,
+				151B84048615053F8039533B /* [CP] Embed Pods Frameworks */,
+				E2E1F575A13DCC8CA8A2F6AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF5D3A0820F27F8C009DC102 /* Build configuration list for PBXNativeTarget "Hero GuideTests" */;
 			buildPhases = (
+				93D17FF7E580DF6BC28E4A82 /* [CP] Check Pods Manifest.lock */,
 				AF5D39ED20F27F8C009DC102 /* Sources */,
 				AF5D39EE20F27F8C009DC102 /* Frameworks */,
 				AF5D39EF20F27F8C009DC102 /* Resources */,
+				79541ACC380DA1D13482B480 /* [CP] Embed Pods Frameworks */,
+				7600D45A1661D25ECC9D6DEC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +288,123 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		151B84048615053F8039533B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CCBottomRefreshControl/CCBottomRefreshControl.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCBottomRefreshControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7600D45A1661D25ECC9D6DEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hero Guide-Hero GuideTests/Pods-Hero Guide-Hero GuideTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79541ACC380DA1D13482B480 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hero Guide-Hero GuideTests/Pods-Hero Guide-Hero GuideTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CCBottomRefreshControl/CCBottomRefreshControl.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CCBottomRefreshControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hero Guide-Hero GuideTests/Pods-Hero Guide-Hero GuideTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D17FF7E580DF6BC28E4A82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hero Guide-Hero GuideTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAABBECD39102F0E9A1AC46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hero Guide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2E1F575A13DCC8CA8A2F6AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF5D39D920F27F8C009DC102 /* Sources */ = {
@@ -428,14 +583,12 @@
 		};
 		AF5D3A0620F27F8C009DC102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hero Guide/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagocruz.hero-guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -445,14 +598,12 @@
 		};
 		AF5D3A0720F27F8C009DC102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B3AC92116D166700E1422C /* Pods-Hero Guide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hero Guide/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagocruz.hero-guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -462,16 +613,13 @@
 		};
 		AF5D3A0920F27F8C009DC102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF8F9EF1D19A4E42DA1D8A9 /* Pods-Hero Guide-Hero GuideTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hero GuideTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagocruz.Hero-GuideTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -482,16 +630,13 @@
 		};
 		AF5D3A0A20F27F8C009DC102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4739CC735D997955FD4E2BEB /* Pods-Hero Guide-Hero GuideTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hero GuideTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagocruz.Hero-GuideTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -506,11 +651,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hero GuideUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagocruz.Hero-GuideUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -525,11 +666,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Hero GuideUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thiagocruz.Hero-GuideUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
