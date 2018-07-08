@@ -131,6 +131,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AF51D9DE20F29285008F38DD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF5D39E920F27F8C009DC102 /* LaunchScreen.storyboard */,
+				AF5D39E420F27F8C009DC102 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AF51D9DF20F2929C008F38DD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF5D39E220F27F8C009DC102 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		AF5D39D420F27F8C009DC102 = {
 			isa = PBXGroup;
 			children = (
@@ -156,14 +173,13 @@
 		AF5D39DF20F27F8C009DC102 /* Hero Guide */ = {
 			isa = PBXGroup;
 			children = (
-				AF51D9D920F28E23008F38DD /* Models */,
+				AF51D9DF20F2929C008F38DD /* ViewControllers */,
 				AF51D9D120F28A2B008F38DD /* Services */,
+				AF51D9D920F28E23008F38DD /* Models */,
 				AF51D9D620F28AD6008F38DD /* Constants */,
+				AF51D9DE20F29285008F38DD /* Storyboards */,
 				AF5D39E020F27F8C009DC102 /* AppDelegate.swift */,
-				AF5D39E220F27F8C009DC102 /* ViewController.swift */,
-				AF5D39E420F27F8C009DC102 /* Main.storyboard */,
 				AF5D39E720F27F8C009DC102 /* Assets.xcassets */,
-				AF5D39E920F27F8C009DC102 /* LaunchScreen.storyboard */,
 				AF5D39EC20F27F8C009DC102 /* Info.plist */,
 			);
 			path = "Hero Guide";
