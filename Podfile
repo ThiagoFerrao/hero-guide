@@ -8,6 +8,7 @@ inhibit_all_warnings!
 target 'Hero Guide' do
   pod 'CCBottomRefreshControl', '~> 0.5'
   pod 'Kingfisher', '~> 4.0'
+  pod 'SwiftHash', '~> 2.0'
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.2'
 
