@@ -20,6 +20,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_background" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-68-HWe">
+                                <rect key="frame" x="60" y="238" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nwd-68-HWe" secondAttribute="height" multiplier="1:1" id="EMH-HY-Cen"/>
+                                </constraints>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="riR-2S-Jk7">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,10 +92,13 @@
                         <color key="backgroundColor" name="color_background"/>
                         <constraints>
                             <constraint firstItem="Sm3-9e-oma" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5KD-vi-pux"/>
+                            <constraint firstItem="nwd-68-HWe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9aV-kx-Tej"/>
                             <constraint firstItem="riR-2S-Jk7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BLg-99-rBT"/>
                             <constraint firstItem="riR-2S-Jk7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bd6-wZ-NkL"/>
                             <constraint firstItem="Sm3-9e-oma" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DnD-5b-QlI"/>
+                            <constraint firstItem="nwd-68-HWe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JKr-1V-Kax"/>
                             <constraint firstAttribute="bottom" secondItem="riR-2S-Jk7" secondAttribute="bottom" id="K3V-al-IU8"/>
+                            <constraint firstItem="nwd-68-HWe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="UXi-te-28b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="riR-2S-Jk7" secondAttribute="trailing" id="nuU-du-MYf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -112,7 +121,20 @@
                     <view key="view" contentMode="scaleToFill" id="Eaj-la-2Uf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_background" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-yh-Jju">
+                                <rect key="frame" x="60" y="238" width="255" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bnW-yh-Jju" secondAttribute="height" multiplier="1:1" id="l0a-Gd-jPm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" name="color_background"/>
+                        <constraints>
+                            <constraint firstItem="bnW-yh-Jju" firstAttribute="centerX" secondItem="krf-lp-Wpx" secondAttribute="centerX" id="J8t-gi-vXP"/>
+                            <constraint firstItem="bnW-yh-Jju" firstAttribute="leading" secondItem="krf-lp-Wpx" secondAttribute="leading" constant="60" id="fag-ga-V6b"/>
+                            <constraint firstItem="bnW-yh-Jju" firstAttribute="centerY" secondItem="krf-lp-Wpx" secondAttribute="centerY" id="mYE-QB-2An"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="krf-lp-Wpx"/>
                     </view>
                 </viewController>
@@ -145,6 +167,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icon_background" width="1024" height="1024"/>
         <namedColor name="color_accent">
             <color red="0.70196078431372544" green="0.23921568627450981" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
