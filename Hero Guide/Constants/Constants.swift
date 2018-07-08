@@ -23,4 +23,12 @@ struct Constants {
             static let API_KEY = "apikey"
         }
     }
+    
+    struct SEGUE_IDENTIFIER {
+        static let TO_CHARACTER = "SegueToCharacterVC"
+    }
+    
+    struct REUSABLE_IDENTIFIER {
+        static let GALLERY_CELL = "GalleryCell"
+    }
 }
