@@ -24,7 +24,7 @@ class GalleryInteractor: NSObject {
     // MARK: Private Methods
     
     private func incrementCurrentOffSetValue() {
-        currentOffSet += 1
+        currentOffSet += 15
     }
     
     private func getRequestTimeStampAndHash() -> (String, String) {
@@ -41,7 +41,6 @@ class GalleryInteractor: NSObject {
 
 extension GalleryInteractor: GalleryInteractorInput {
     func getCharacters() {
-        incrementCurrentOffSetValue()
         let (timeStamp, hash) = getRequestTimeStampAndHash()
         
         CharactersService.shared.getCharacters(limit: Constants.API.LIMIT.DEFAULT
@@ -55,5 +54,10 @@ extension GalleryInteractor: GalleryInteractorInput {
         }) { (error) in
             self.interactorOutput?.requestFailed()
         }
+    }
+    
+    func getMoreCharacters() {
+        incrementCurrentOffSetValue()
+        getCharacters()
     }
 }

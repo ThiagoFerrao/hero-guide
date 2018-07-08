@@ -10,6 +10,7 @@ import Foundation
 
 protocol GalleryInteractorInput {
     func getCharacters()
+    func getMoreCharacters()
 }
 
 protocol GalleryInteractorOutput {

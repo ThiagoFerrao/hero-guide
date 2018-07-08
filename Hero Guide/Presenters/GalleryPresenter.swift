@@ -45,7 +45,7 @@ extension GalleryPresenter: GalleryViewHandlerInterface {
     }
     
     func loadMoreData() {
-        interactorInput?.getCharacters()
+        interactorInput?.getMoreCharacters()
     }
 }
 
