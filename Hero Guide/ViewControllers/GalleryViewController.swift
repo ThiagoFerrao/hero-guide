@@ -35,9 +35,33 @@ class GalleryViewController: UIViewController {
 // MARK: GalleryViewInterface
 
 extension GalleryViewController: GalleryViewInterface {
+    func showLoading() {
+        
+    }
+    
+    func hideLoading() {
+        
+    }
+    
+    func showCollectionView() {
+        
+    }
+    
+    func hideCollectionView() {
+        
+    }
+    
     func setupContent() {
         refreshControl.addTarget(self, action: #selector(refreshCollectionRequested), for: .valueChanged)
         collectionView.bottomRefreshControl = refreshControl
+    }
+    
+    func showAlert(_ alertController: UIAlertController) {
+        
+    }
+    
+    func updateCharacterList(_ characterList: [Character]) {
+        
     }
 }
 

@@ -9,9 +9,10 @@
 import Foundation
 
 protocol GalleryInteractorInput {
-    func loadCharacters()
+    func getCharacters()
 }
 
 protocol GalleryInteractorOutput {
-    
+    func loadCharacters(_ characterList: [Character])
+    func requestFailed()
 }

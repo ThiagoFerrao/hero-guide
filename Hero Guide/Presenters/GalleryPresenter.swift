@@ -6,7 +6,7 @@
 //  Copyright © 2018 Thiago Ferrão. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class GalleryPresenter: NSObject {
     
@@ -20,6 +20,18 @@ class GalleryPresenter: NSObject {
         self.interactorInput = GalleryInteractor(output: self)
     }
     
+    
+    // MARK: Private Methods
+    
+    private func startFullScreenLoading() {
+        userInterface?.hideCollectionView()
+        userInterface?.showLoading()
+    }
+    
+    private func finishFullScreenLoading() {
+        userInterface?.hideLoading()
+        userInterface?.showCollectionView()
+    }
 }
 
 
@@ -27,12 +39,14 @@ class GalleryPresenter: NSObject {
 
 extension GalleryPresenter: GalleryViewHandlerInterface {
     func viewDidLoad() {
+        startFullScreenLoading()
         userInterface?.setupContent()
-        interactorInput?.loadCharacters()
+        interactorInput?.getCharacters()
     }
     
     func loadMoreData() {
-        interactorInput?.loadCharacters()
+        userInterface?.showLoading()
+        interactorInput?.getCharacters()
     }
 }
 
@@ -40,5 +54,18 @@ extension GalleryPresenter: GalleryViewHandlerInterface {
 // MARK: GalleryInteractorOutput
 
 extension GalleryPresenter: GalleryInteractorOutput {
+    func loadCharacters(_ characterList: [Character]) {
+        userInterface?.updateCharacterList(characterList)
+        finishFullScreenLoading()
+    }
     
+    func requestFailed() {
+        userInterface?.hideLoading()
+        let alertController = UIAlertController(title: "Ops!"
+            , message: "An error occurred during the request :(\nPlease, try again later"
+            , preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
+        
+        userInterface?.showAlert(alertController)
+    }
 }

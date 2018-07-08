@@ -40,7 +40,7 @@ class GalleryInteractor: NSObject {
 // MARK: GalleryInteractorInput
 
 extension GalleryInteractor: GalleryInteractorInput {
-    func loadCharacters() {
+    func getCharacters() {
         incrementCurrentOffSetValue()
         let (timeStamp, hash) = getRequestTimeStampAndHash()
         
@@ -50,10 +50,10 @@ extension GalleryInteractor: GalleryInteractorInput {
             , apiKey: Constants.API.KEY.PUBLIC
             , hash: hash
             , success: { (characterList) in
-                print(characterList)
+                self.interactorOutput?.loadCharacters(characterList)
                 
         }) { (error) in
-            print(error)
+            self.interactorOutput?.requestFailed()
         }
     }
 }

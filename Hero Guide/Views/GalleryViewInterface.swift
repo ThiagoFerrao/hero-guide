@@ -6,8 +6,14 @@
 //  Copyright © 2018 Thiago Ferrão. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol GalleryViewInterface {
+    func showLoading()
+    func hideLoading()
+    func showCollectionView()
+    func hideCollectionView()
     func setupContent()
+    func showAlert(_ alertController: UIAlertController)
+    func updateCharacterList(_ characterList: [Character])
 }
