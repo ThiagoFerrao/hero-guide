@@ -111,6 +111,18 @@ extension GalleryViewController: UICollectionViewDataSource {
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionElementKindSectionFooter:
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Constants.REUSABLE_IDENTIFIER.COPYRIGHT_FOOTER_VIEW, for: indexPath)
+            
+            return footerView
+            
+        default:
+            return UICollectionReusableView()
+        }
+    }
 }
 
 

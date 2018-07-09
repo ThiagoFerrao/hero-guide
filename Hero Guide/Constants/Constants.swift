@@ -41,6 +41,7 @@ struct Constants {
     
     struct REUSABLE_IDENTIFIER {
         static let GALLERY_CELL = "GalleryCell"
+        static let COPYRIGHT_FOOTER_VIEW = "CopyrightFooterView"
     }
     
     struct COLOR {
