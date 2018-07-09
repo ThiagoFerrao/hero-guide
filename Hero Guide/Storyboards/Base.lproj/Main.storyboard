@@ -103,7 +103,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hero List" id="che-Qm-Raj"/>
+                    <navigationItem key="navigationItem" title="Hero List" id="che-Qm-Raj">
+                        <barButtonItem key="backBarButtonItem" title=" " id="rf3-2l-VXX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="riR-2S-Jk7" id="rXe-LI-AYq"/>
                         <outlet property="loadingIndicator" destination="Sm3-9e-oma" id="axn-qv-lIe"/>
