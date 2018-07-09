@@ -29,7 +29,8 @@ extension CharacterPresenter: CharacterViewHandlerInterface {
         userInterface?.setImageLayout()
         userInterface?.setCharacterImage(with: character?.getLandscapeImageURL())
         userInterface?.setCharacterNameLabel(with: character?.name ?? dataNotFoundText)
-        userInterface?.setCharacterDescriptionLabel(with: character?.description ?? dataNotFoundText)
+        let characterDescription = (character?.description?.isEmpty ?? true) ? dataNotFoundText : character?.description
+        userInterface?.setCharacterDescriptionLabel(with: characterDescription ?? dataNotFoundText)
         userInterface?.setCharacterComicsLabel(with: character?.getComicsNames() ?? dataNotFoundText)
         userInterface?.setCharacterSeriesLabel(with: character?.getSeriesNames() ?? dataNotFoundText)
     }
