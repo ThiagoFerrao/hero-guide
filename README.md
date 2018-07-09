@@ -9,8 +9,6 @@
 * Alamofire - https://github.com/Alamofire/Alamofire
 * ObjectMapper - https://github.com/Hearst-DD/ObjectMapper
 ### Screenshots
-<p float="center">
-<img src="screenshots/Splash.png" width="200" />
-<img src="screenshots/Gallery.png" width="200" /> 
-<img src="screenshots/Details.png" width="200" />
-</p>
+![alternativetext](screenshots/Splash.png)
+![alternativetext](screenshots/Gallery.png)
+![alternativetext](screenshots/Details.png)
