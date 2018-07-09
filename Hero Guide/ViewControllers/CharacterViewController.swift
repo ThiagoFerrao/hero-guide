@@ -10,11 +10,16 @@ import UIKit
 
 class CharacterViewController: UIViewController {
     
+    @IBOutlet weak var characterLandscapeImage: UIImageView!
+    @IBOutlet weak var characterNameLabel: UILabel!
+    @IBOutlet weak var characterDescriptionLabel: UILabel!
+    @IBOutlet weak var characterComicsLabel: UILabel!
+    @IBOutlet weak var characterSeriesLabel: UILabel!
+    
     var character: Character?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = character?.name
     }
 }
