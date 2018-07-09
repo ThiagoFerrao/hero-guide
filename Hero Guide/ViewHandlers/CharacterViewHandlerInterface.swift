@@ -10,4 +10,5 @@ import Foundation
 
 protocol CharacterViewHandlerInterface {
     func viewDidLoad(with character: Character?)
+    func readWikiButtonClicked()
 }

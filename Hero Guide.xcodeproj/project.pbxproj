@@ -25,6 +25,7 @@
 		AF51D9FA20F30A76008F38DD /* CharacterViewHandlerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9F920F30A76008F38DD /* CharacterViewHandlerInterface.swift */; };
 		AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9FB20F30A90008F38DD /* CharacterPresenter.swift */; };
 		AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9FD20F30CA4008F38DD /* ResourceData.swift */; };
+		AF51DA0020F32008008F38DD /* ResourceURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9FF20F32008008F38DD /* ResourceURL.swift */; };
 		AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E020F27F8C009DC102 /* AppDelegate.swift */; };
 		AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */; };
 		AF5D39E620F27F8C009DC102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E420F27F8C009DC102 /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 		AF51D9F920F30A76008F38DD /* CharacterViewHandlerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewHandlerInterface.swift; sourceTree = "<group>"; };
 		AF51D9FB20F30A90008F38DD /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
 		AF51D9FD20F30CA4008F38DD /* ResourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceData.swift; sourceTree = "<group>"; };
+		AF51D9FF20F32008008F38DD /* ResourceURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceURL.swift; sourceTree = "<group>"; };
 		AF5D39DD20F27F8C009DC102 /* Hero Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hero Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D39E020F27F8C009DC102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */,
 				AF51D9DC20F28EE6008F38DD /* Character.swift */,
 				AF51D9FD20F30CA4008F38DD /* ResourceData.swift */,
+				AF51D9FF20F32008008F38DD /* ResourceURL.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				AF51D9FA20F30A76008F38DD /* CharacterViewHandlerInterface.swift in Sources */,
 				AF51D9F820F30A40008F38DD /* CharacterViewInterface.swift in Sources */,
 				AF51D9D820F28AEB008F38DD /* Constants.swift in Sources */,
+				AF51DA0020F32008008F38DD /* ResourceURL.swift in Sources */,
 				AF51D9F420F2B209008F38DD /* DateExtension.swift in Sources */,
 				AF51D9EB20F297BF008F38DD /* GalleryPresenter.swift in Sources */,
 				AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */,

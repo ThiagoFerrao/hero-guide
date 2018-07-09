@@ -16,6 +16,11 @@ class CharacterViewController: UIViewController {
     @IBOutlet weak var characterComicsLabel: UILabel!
     @IBOutlet weak var characterSeriesLabel: UILabel!
     
+    
+    @IBAction func readWikiButtonClicked() {
+        eventHandler?.readWikiButtonClicked()
+    }
+    
     var character: Character?
     private var eventHandler: CharacterViewHandlerInterface?
     

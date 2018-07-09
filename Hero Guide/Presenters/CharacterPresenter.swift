@@ -34,4 +34,8 @@ extension CharacterPresenter: CharacterViewHandlerInterface {
         userInterface?.setCharacterComicsLabel(with: character?.getComicsNames() ?? dataNotFoundText)
         userInterface?.setCharacterSeriesLabel(with: character?.getSeriesNames() ?? dataNotFoundText)
     }
+    
+    func readWikiButtonClicked() {
+        
+    }
 }

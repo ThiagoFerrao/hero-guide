@@ -16,6 +16,7 @@ class Character: Mappable {
     var thumbnailExtension: String?
     var comics: [ResourceData]?
     var series: [ResourceData]?
+    var urls: [ResourceURL]?
     
     required init?(map: Map) {
         
@@ -28,6 +29,7 @@ class Character: Mappable {
         thumbnailExtension <- map["thumbnail.extension"]
         comics <- map["comics.items"]
         series <- map["series.items"]
+        urls <- map["urls"]
     }
     
     
@@ -80,5 +82,22 @@ class Character: Mappable {
 
     func getSeriesNames() -> String? {
         return getResourceDataNames(from: series)
+    }
+    
+    func getWikiTypeURL() -> URL? {
+        guard let resourceURLList = urls, !resourceURLList.isEmpty else {
+            return nil
+        }
+        
+        var wikiURL: String?
+        
+        for resourceURL in resourceURLList {
+            if resourceURL.type == "wiki" {
+                wikiURL = resourceURL.url
+                break
+            }
+        }
+        
+        return URL(string: wikiURL ?? "")
     }
 }
