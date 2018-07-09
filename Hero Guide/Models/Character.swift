@@ -53,7 +53,7 @@ class Character: Mappable {
     }
     
     private func getResourceDataNames(from resourceDataList: [ResourceData]?) -> String {
-        guard let dataList = resourceDataList else {
+        guard let dataList = resourceDataList, !dataList.isEmpty else {
             return "Data not found :("
         }
         
@@ -65,6 +65,10 @@ class Character: Mappable {
             }
             
             dataNameList.append(dataName)
+        }
+        
+        guard !dataNameList.isEmpty else {
+            return "Data not found :("
         }
         
         return dataNameList.joined(separator: "\n")
