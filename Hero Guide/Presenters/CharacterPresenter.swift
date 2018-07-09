@@ -10,7 +10,8 @@ import Foundation
 
 class CharacterPresenter: NSObject {
     
-    private var userInterface : CharacterViewInterface?
+    private var userInterface: CharacterViewInterface?
+    private var character: Character?
     private let dataNotFoundText = "Data not found :("
     
     init(userInterface: CharacterViewInterface) {
@@ -25,6 +26,8 @@ class CharacterPresenter: NSObject {
 
 extension CharacterPresenter: CharacterViewHandlerInterface {
     func viewDidLoad(with character: Character?) {
+        self.character = character
+        
         userInterface?.setNavigationTitle(with: character?.name ?? dataNotFoundText)
         userInterface?.setImageLayout()
         userInterface?.setCharacterImage(with: character?.getLandscapeImageURL())
@@ -36,6 +39,10 @@ extension CharacterPresenter: CharacterViewHandlerInterface {
     }
     
     func readWikiButtonClicked() {
+        guard let wikiURL = character?.getWikiURL() else {
+            return
+        }
         
+        userInterface?.openURL(with: wikiURL)
     }
 }

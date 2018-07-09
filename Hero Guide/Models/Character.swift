@@ -84,7 +84,7 @@ class Character: Mappable {
         return getResourceDataNames(from: series)
     }
     
-    func getWikiTypeURL() -> URL? {
+    func getWikiURL() -> URL? {
         guard let resourceURLList = urls, !resourceURLList.isEmpty else {
             return nil
         }

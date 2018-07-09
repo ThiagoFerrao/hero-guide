@@ -16,4 +16,5 @@ protocol CharacterViewInterface {
     func setCharacterDescriptionLabel(with value: String)
     func setCharacterComicsLabel(with value: String)
     func setCharacterSeriesLabel(with value: String)
+    func openURL(with value: URL)
 }

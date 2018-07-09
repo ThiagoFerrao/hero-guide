@@ -75,4 +75,8 @@ extension CharacterViewController: CharacterViewInterface {
     func setCharacterSeriesLabel(with value: String) {
         characterSeriesLabel.text = value
     }
+    
+    func openURL(with value: URL) {
+        UIApplication.shared.open(value, options: [:], completionHandler: nil)
+    }
 }
