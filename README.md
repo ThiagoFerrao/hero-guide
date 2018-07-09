@@ -8,7 +8,3 @@
 * SwiftHash - https://github.com/onmyway133/SwiftHash
 * Alamofire - https://github.com/Alamofire/Alamofire
 * ObjectMapper - https://github.com/Hearst-DD/ObjectMapper
-### Screenshots
-![alternativetext](screenshots/Splash.png)
-![alternativetext](screenshots/Gallery.png)
-![alternativetext](screenshots/Details.png)
