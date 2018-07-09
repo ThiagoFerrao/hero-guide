@@ -29,14 +29,22 @@ class Character: Mappable {
     
     // MARK: Public Methods
     
-    func getStandardImageURL() -> URL? {
+    private func getImageURL(marvelImageParameter: String) -> URL? {
         var secureThumbnailPath = thumbnailPath
         
         if thumbnailPath?.contains("http://") ?? false {
             secureThumbnailPath = thumbnailPath?.replacingOccurrences(of: "http://", with: "https://", options: .literal)
         }
         
-        let imageUrlString = "\(secureThumbnailPath ?? "")\(Constants.IMAGE.MARVEL_PARAMETER.STANDARD_PATH).\(thumbnailExtension ?? "")"
+        let imageUrlString = "\(secureThumbnailPath ?? "")\(marvelImageParameter).\(thumbnailExtension ?? "")"
         return URL(string: imageUrlString)
+    }
+    
+    func getStandardImageURL() -> URL? {
+        return getImageURL(marvelImageParameter: Constants.IMAGE.MARVEL_PARAMETER.STANDARD)
+    }
+    
+    func getLandscapeImageURL() -> URL? {
+        return getImageURL(marvelImageParameter: Constants.IMAGE.MARVEL_PARAMETER.LANDSCAPE)
     }
 }

@@ -53,7 +53,8 @@ struct Constants {
         static let APP_ICON = "icon_app"
         
         struct MARVEL_PARAMETER {
-            static let STANDARD_PATH = "/standard_amazing"
+            static let STANDARD = "/standard_amazing"
+            static let LANDSCAPE = "/landscape_incredible"
         }
     }
 }
