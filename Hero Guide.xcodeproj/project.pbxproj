@@ -24,6 +24,7 @@
 		AF51D9F820F30A40008F38DD /* CharacterViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9F720F30A40008F38DD /* CharacterViewInterface.swift */; };
 		AF51D9FA20F30A76008F38DD /* CharacterViewHandlerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9F920F30A76008F38DD /* CharacterViewHandlerInterface.swift */; };
 		AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9FB20F30A90008F38DD /* CharacterPresenter.swift */; };
+		AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9FD20F30CA4008F38DD /* ResourceData.swift */; };
 		AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E020F27F8C009DC102 /* AppDelegate.swift */; };
 		AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */; };
 		AF5D39E620F27F8C009DC102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E420F27F8C009DC102 /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		AF51D9F720F30A40008F38DD /* CharacterViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewInterface.swift; sourceTree = "<group>"; };
 		AF51D9F920F30A76008F38DD /* CharacterViewHandlerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewHandlerInterface.swift; sourceTree = "<group>"; };
 		AF51D9FB20F30A90008F38DD /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		AF51D9FD20F30CA4008F38DD /* ResourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceData.swift; sourceTree = "<group>"; };
 		AF5D39DD20F27F8C009DC102 /* Hero Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hero Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D39E020F27F8C009DC102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */,
 				AF51D9DC20F28EE6008F38DD /* Character.swift */,
+				AF51D9FD20F30CA4008F38DD /* ResourceData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */,
 				AF51D9DD20F28EE6008F38DD /* Character.swift in Sources */,
 				AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */,
+				AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */,
 				AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */,
 				AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */,
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,

@@ -14,6 +14,8 @@ class Character: Mappable {
     var description: String?
     var thumbnailPath: String?
     var thumbnailExtension: String?
+    var comics: [ResourceData]?
+    var series: [ResourceData]?
     
     required init?(map: Map) {
         
@@ -24,6 +26,8 @@ class Character: Mappable {
         description <- map["description"]
         thumbnailPath <- map["thumbnail.path"]
         thumbnailExtension <- map["thumbnail.extension"]
+        comics <- map["comics.items"]
+        series <- map["series.items"]
     }
     
     
@@ -46,5 +50,31 @@ class Character: Mappable {
     
     func getLandscapeImageURL() -> URL? {
         return getImageURL(marvelImageParameter: Constants.IMAGE.MARVEL_PARAMETER.LANDSCAPE)
+    }
+    
+    private func getResourceDataNames(from resourceDataList: [ResourceData]?) -> String {
+        guard let dataList = resourceDataList else {
+            return "Data not found :("
+        }
+        
+        var dataNameList = [String]()
+        
+        for data in dataList.prefix(5) {
+            guard let dataName = data.name else {
+                continue
+            }
+            
+            dataNameList.append(dataName)
+        }
+        
+        return dataNameList.joined(separator: "\n")
+    }
+    
+    func getComicsNames() -> String {
+        return getResourceDataNames(from: comics)
+    }
+
+    func getSeriesNames() -> String {
+        return getResourceDataNames(from: series)
     }
 }
