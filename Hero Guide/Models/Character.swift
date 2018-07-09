@@ -52,9 +52,9 @@ class Character: Mappable {
         return getImageURL(marvelImageParameter: Constants.IMAGE.MARVEL_PARAMETER.LANDSCAPE)
     }
     
-    private func getResourceDataNames(from resourceDataList: [ResourceData]?) -> String {
+    private func getResourceDataNames(from resourceDataList: [ResourceData]?) -> String? {
         guard let dataList = resourceDataList, !dataList.isEmpty else {
-            return "Data not found :("
+            return nil
         }
         
         var dataNameList = [String]()
@@ -68,17 +68,17 @@ class Character: Mappable {
         }
         
         guard !dataNameList.isEmpty else {
-            return "Data not found :("
+            return nil
         }
         
         return dataNameList.joined(separator: "\n")
     }
     
-    func getComicsNames() -> String {
+    func getComicsNames() -> String? {
         return getResourceDataNames(from: comics)
     }
 
-    func getSeriesNames() -> String {
+    func getSeriesNames() -> String? {
         return getResourceDataNames(from: series)
     }
 }

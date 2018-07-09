@@ -21,7 +21,7 @@ class GalleryCollectionViewCell: UICollectionViewCell {
             let imageURL = character?.getStandardImageURL()
             
             characterImage.kf.setImage(with: imageURL
-                , placeholder: UIImage(named: "icon_app")
+                , placeholder: UIImage(named: Constants.IMAGE.APP_ICON)
                 , options: [
                     .transition(.fade(1))
                 ], progressBlock: nil, completionHandler: nil)

@@ -9,5 +9,11 @@
 import Foundation
 
 protocol CharacterViewInterface {
-    func setupContent()
+    func setNavigationTitle(with value: String)
+    func setImageLayout()
+    func setCharacterImage(with value: URL?)
+    func setCharacterNameLabel(with value: String)
+    func setCharacterDescriptionLabel(with value: String)
+    func setCharacterComicsLabel(with value: String)
+    func setCharacterSeriesLabel(with value: String)
 }

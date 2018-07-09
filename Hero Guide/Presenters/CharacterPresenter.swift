@@ -11,6 +11,7 @@ import Foundation
 class CharacterPresenter: NSObject {
     
     private var userInterface : CharacterViewInterface?
+    private let dataNotFoundText = "Data not found :("
     
     init(userInterface: CharacterViewInterface) {
         super.init()
@@ -23,7 +24,13 @@ class CharacterPresenter: NSObject {
 // MARK: CharacterViewHandlerInterface
 
 extension CharacterPresenter: CharacterViewHandlerInterface {
-    func viewDidLoad() {
-        userInterface?.setupContent()
+    func viewDidLoad(with character: Character?) {
+        userInterface?.setNavigationTitle(with: character?.name ?? dataNotFoundText)
+        userInterface?.setImageLayout()
+        userInterface?.setCharacterImage(with: character?.getLandscapeImageURL())
+        userInterface?.setCharacterNameLabel(with: character?.name ?? dataNotFoundText)
+        userInterface?.setCharacterDescriptionLabel(with: character?.description ?? dataNotFoundText)
+        userInterface?.setCharacterComicsLabel(with: character?.getComicsNames() ?? dataNotFoundText)
+        userInterface?.setCharacterSeriesLabel(with: character?.getSeriesNames() ?? dataNotFoundText)
     }
 }

@@ -23,17 +23,19 @@ class CharacterViewController: UIViewController {
         super.viewDidLoad()
         
         eventHandler = CharacterPresenter(userInterface: self)
-        eventHandler?.viewDidLoad()
+        eventHandler?.viewDidLoad(with: character)
+    }
+}
+
+
+// MARK: CharacterViewInterface
+
+extension CharacterViewController: CharacterViewInterface {
+    func setNavigationTitle(with value: String) {
+        self.navigationItem.title = value
     }
     
-    
-    // MARK: Private Methods
-    
-    private func setupNavigationTitle() {
-        self.navigationItem.title = character?.name
-    }
-    
-    private func setupImageViewLayerMask() {
+    func setImageLayout() {
         let maskLayer = CAGradientLayer()
         maskLayer.frame = characterLandscapeImage.bounds
         maskLayer.shadowRadius = 5
@@ -44,14 +46,28 @@ class CharacterViewController: UIViewController {
         
         characterLandscapeImage.layer.mask = maskLayer;
     }
-}
-
-
-// MARK: CharacterViewInterface
-
-extension CharacterViewController: CharacterViewInterface {
-    func setupContent() {
-        setupNavigationTitle()
-        setupImageViewLayerMask()
+    
+    func setCharacterImage(with value: URL?) {
+        characterLandscapeImage.kf.setImage(with: value
+            , placeholder: UIImage(named: Constants.IMAGE.APP_ICON)
+            , options: [
+                .transition(.fade(1))
+            ], progressBlock: nil, completionHandler: nil)
+    }
+    
+    func setCharacterNameLabel(with value: String) {
+        characterNameLabel.text = value
+    }
+    
+    func setCharacterDescriptionLabel(with value: String) {
+        characterDescriptionLabel.text = value
+    }
+    
+    func setCharacterComicsLabel(with value: String) {
+        characterComicsLabel.text = value
+    }
+    
+    func setCharacterSeriesLabel(with value: String) {
+        characterSeriesLabel.text = value
     }
 }

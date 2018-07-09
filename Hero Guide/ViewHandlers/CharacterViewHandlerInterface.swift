@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CharacterViewHandlerInterface {
-    func viewDidLoad()
+    func viewDidLoad(with character: Character?)
 }
