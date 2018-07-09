@@ -47,6 +47,10 @@ extension GalleryPresenter: GalleryViewHandlerInterface {
     func loadMoreData() {
         interactorInput?.getMoreCharacters()
     }
+    
+    func characterSelected(_ characterSelected: Character) {
+        userInterface?.presentCharacterScreen(send: characterSelected)
+    }
 }
 
 

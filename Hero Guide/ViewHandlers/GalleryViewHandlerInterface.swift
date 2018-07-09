@@ -11,4 +11,5 @@ import Foundation
 protocol GalleryViewHandlerInterface {
     func viewDidLoad()
     func loadMoreData()
+    func characterSelected(_ characterSelected: Character)
 }

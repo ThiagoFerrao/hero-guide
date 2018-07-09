@@ -10,6 +10,8 @@ import UIKit
 
 class CharacterViewController: UIViewController {
     
+    var character: Character?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

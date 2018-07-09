@@ -31,6 +31,22 @@ class GalleryViewController: UIViewController {
     @objc private func refreshCollectionRequested() {
         eventHandler?.loadMoreData()
     }
+    
+    
+    // MARK: SEGUE
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case Constants.SEGUE_IDENTIFIER.TO_CHARACTER:
+            let sendCharacter = sender as? Character
+            let characterVC = segue.destination as? CharacterViewController
+            
+            characterVC?.character = sendCharacter
+            
+        default:
+            return
+        }
+    }
 }
 
 
@@ -75,6 +91,10 @@ extension GalleryViewController: GalleryViewInterface {
         characterList.append(contentsOf: newCharacterList)
         collectionView.reloadData()
     }
+    
+    func presentCharacterScreen(send sendCharacter: Character) {
+        performSegue(withIdentifier: Constants.SEGUE_IDENTIFIER.TO_CHARACTER, sender: sendCharacter)
+    }
 }
 
 
@@ -102,6 +122,6 @@ extension GalleryViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        eventHandler?.characterSelected(characterList[indexPath.row])
     }
 }
