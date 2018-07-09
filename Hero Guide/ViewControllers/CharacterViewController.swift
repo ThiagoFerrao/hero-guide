@@ -17,9 +17,21 @@ class CharacterViewController: UIViewController {
     @IBOutlet weak var characterSeriesLabel: UILabel!
     
     var character: Character?
+    private var eventHandler: CharacterViewHandlerInterface?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        eventHandler = CharacterPresenter(userInterface: self)
+        eventHandler?.viewDidLoad()
+    }
+}
+
+
+// MARK: CharacterViewInterface
+
+extension CharacterViewController: CharacterViewInterface {
+    func setupContent() {
         
     }
 }

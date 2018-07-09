@@ -10,7 +10,7 @@ import UIKit
 
 class GalleryPresenter: NSObject {
     
-    private var userInterface   : GalleryViewInterface?
+    private var userInterface : GalleryViewInterface?
     private var interactorInput : GalleryInteractorInput?
     
     init(userInterface: GalleryViewInterface) {
