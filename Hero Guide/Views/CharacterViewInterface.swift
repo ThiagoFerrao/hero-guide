@@ -6,7 +6,7 @@
 //  Copyright © 2018 Thiago Ferrão. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol CharacterViewInterface {
     func setNavigationTitle(with value: String)
@@ -16,5 +16,6 @@ protocol CharacterViewInterface {
     func setCharacterDescriptionLabel(with value: String)
     func setCharacterComicsLabel(with value: String)
     func setCharacterSeriesLabel(with value: String)
+    func showAlert(_ alertController: UIAlertController)
     func openURL(with value: URL)
 }

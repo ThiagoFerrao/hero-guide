@@ -76,6 +76,10 @@ extension CharacterViewController: CharacterViewInterface {
         characterSeriesLabel.text = value
     }
     
+    func showAlert(_ alertController: UIAlertController) {
+        present(alertController, animated: true, completion: nil)
+    }
+    
     func openURL(with value: URL) {
         UIApplication.shared.open(value, options: [:], completionHandler: nil)
     }

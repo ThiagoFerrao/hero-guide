@@ -6,7 +6,7 @@
 //  Copyright © 2018 Thiago Ferrão. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class CharacterPresenter: NSObject {
     
@@ -40,6 +40,11 @@ extension CharacterPresenter: CharacterViewHandlerInterface {
     
     func readWikiButtonClicked() {
         guard let wikiURL = character?.getWikiURL() else {
+            let alertController = UIAlertController(title: "Ops!"
+                , message: "Unable to find the link to this character's wiki :("
+                , preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            userInterface?.showAlert(alertController)
             return
         }
         
