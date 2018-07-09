@@ -59,6 +59,11 @@ extension GalleryPresenter: GalleryInteractorOutput {
         userInterface?.endRefreshing()
     }
     
+    func loadEmptyList() {
+        userInterface?.endRefreshing()
+        userInterface?.disableRefreshingControl()
+    }
+    
     func requestFailed(firstRequest: Bool) {
         userInterface?.endRefreshing()
         let alertController = UIAlertController(title: "Ops!"

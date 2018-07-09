@@ -53,6 +53,11 @@ extension GalleryInteractor: GalleryInteractorInput {
             , apiKey: Constants.API.KEY.PUBLIC
             , hash: hash
             , success: { (characterList) in
+                if characterList.isEmpty {
+                    self.interactorOutput?.loadEmptyList()
+                    return
+                }
+                
                 self.interactorOutput?.loadCharacters(characterList)
                 
         }) { (error) in

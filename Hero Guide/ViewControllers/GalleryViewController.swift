@@ -57,6 +57,10 @@ extension GalleryViewController: GalleryViewInterface {
         refreshControl.endRefreshing()
     }
     
+    func disableRefreshingControl() {
+        collectionView.bottomRefreshControl = nil
+    }
+    
     func setupContent() {
         refreshControl.tintColor = UIColor(named: Constants.COLOR.ACCENT)
         refreshControl.addTarget(self, action: #selector(refreshCollectionRequested), for: .valueChanged)
