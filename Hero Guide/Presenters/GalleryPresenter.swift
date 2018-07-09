@@ -59,13 +59,20 @@ extension GalleryPresenter: GalleryInteractorOutput {
         userInterface?.endRefreshing()
     }
     
-    func requestFailed() {
+    func requestFailed(firstRequest: Bool) {
         userInterface?.endRefreshing()
-        
         let alertController = UIAlertController(title: "Ops!"
             , message: "An error occurred during the request :(\nPlease, try again later"
             , preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default,handler: nil))
+        
+        if firstRequest {
+            alertController.addAction(UIAlertAction(title: "Retry", style: UIAlertActionStyle.default) { (alertAction) in
+                self.interactorInput?.getCharacters()
+            })
+            
+        } else {
+            alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        }
         
         userInterface?.showAlert(alertController)
     }

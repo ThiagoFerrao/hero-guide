@@ -15,5 +15,5 @@ protocol GalleryInteractorInput {
 
 protocol GalleryInteractorOutput {
     func loadCharacters(_ characterList: [Character])
-    func requestFailed()
+    func requestFailed(firstRequest: Bool)
 }

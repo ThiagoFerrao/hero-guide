@@ -27,6 +27,10 @@ class GalleryInteractor: NSObject {
         currentOffSet += 15
     }
     
+    private func subtractCurrentOffSetValue() {
+        currentOffSet -= 15
+    }
+    
     private func getRequestTimeStampAndHash() -> (String, String) {
         let timeStamp = Date().getTimeStamp()
         let privateKey = Constants.API.KEY.PRIVATE
@@ -52,7 +56,11 @@ extension GalleryInteractor: GalleryInteractorInput {
                 self.interactorOutput?.loadCharacters(characterList)
                 
         }) { (error) in
-            self.interactorOutput?.requestFailed()
+            if self.currentOffSet != 0 {
+                self.subtractCurrentOffSetValue()
+            }
+            
+            self.interactorOutput?.requestFailed(firstRequest: self.currentOffSet == 0)
         }
     }
     
