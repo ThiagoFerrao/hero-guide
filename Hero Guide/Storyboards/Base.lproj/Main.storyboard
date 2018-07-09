@@ -153,7 +153,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJZ-VI-vrX" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="523"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="548"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dbG-KM-l2G">
                                                 <rect key="frame" x="20" y="20" width="334" height="188"/>
@@ -209,7 +209,7 @@
                                                 <color key="textColor" name="color_primary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2m-sk-exr" userLabel="Read More on the Marvel Wiki">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2m-sk-exr" userLabel="Read More on the Marvel Wiki">
                                                 <rect key="frame" x="73.5" y="471" width="227" height="32"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                                 <state key="normal" title="Read More on the Marvel Wiki ">
@@ -219,6 +219,15 @@
                                                     <action selector="readWikiButtonClicked" destination="b7a-a3-pHW" eventType="touchUpInside" id="0At-RR-FDX"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data provided by Marvel. © 2014 Marvel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-ps-Kfn">
+                                                <rect key="frame" x="0.0" y="523" width="370" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="kAw-aJ-kNM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" name="color_primary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -228,6 +237,8 @@
                                             <constraint firstItem="Uhe-UY-l9S" firstAttribute="leading" secondItem="bg8-OQ-zya" secondAttribute="leading" id="4eH-az-YP7"/>
                                             <constraint firstItem="xF2-9s-2uH" firstAttribute="top" secondItem="161-Of-v3h" secondAttribute="bottom" constant="20" id="6NK-QH-pA7"/>
                                             <constraint firstItem="Uhe-UY-l9S" firstAttribute="trailing" secondItem="bg8-OQ-zya" secondAttribute="trailing" id="7Ek-Vd-UuE"/>
+                                            <constraint firstItem="X3L-ps-Kfn" firstAttribute="top" secondItem="Y2m-sk-exr" secondAttribute="bottom" constant="20" id="9LP-1H-IBz"/>
+                                            <constraint firstAttribute="trailing" secondItem="X3L-ps-Kfn" secondAttribute="trailing" constant="5" id="BaN-Xw-iMW"/>
                                             <constraint firstItem="eFe-UV-ppa" firstAttribute="leading" secondItem="Uhe-UY-l9S" secondAttribute="leading" id="Cp2-94-Bb7"/>
                                             <constraint firstItem="yeT-wl-oUR" firstAttribute="top" secondItem="eFe-UV-ppa" secondAttribute="bottom" constant="5" id="Dvs-Fi-HIn"/>
                                             <constraint firstItem="161-Of-v3h" firstAttribute="leading" secondItem="dbG-KM-l2G" secondAttribute="leading" id="E2q-ap-oxu"/>
@@ -236,13 +247,14 @@
                                             <constraint firstItem="yeT-wl-oUR" firstAttribute="trailing" secondItem="eFe-UV-ppa" secondAttribute="trailing" id="JRQ-uD-HCc"/>
                                             <constraint firstItem="dbG-KM-l2G" firstAttribute="centerX" secondItem="jJZ-VI-vrX" secondAttribute="centerX" id="NDB-wS-XU6"/>
                                             <constraint firstItem="qL9-kP-Rwu" firstAttribute="top" secondItem="xF2-9s-2uH" secondAttribute="bottom" constant="5" id="Oy4-n1-bcJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="Y2m-sk-exr" secondAttribute="bottom" constant="20" id="Pbl-Ps-cdi"/>
                                             <constraint firstItem="161-Of-v3h" firstAttribute="top" secondItem="dbG-KM-l2G" secondAttribute="bottom" constant="20" id="SI9-jF-d60"/>
                                             <constraint firstItem="161-Of-v3h" firstAttribute="trailing" secondItem="dbG-KM-l2G" secondAttribute="trailing" id="SKe-ap-LGj"/>
                                             <constraint firstItem="yeT-wl-oUR" firstAttribute="leading" secondItem="eFe-UV-ppa" secondAttribute="leading" id="Vxx-qc-ARg"/>
+                                            <constraint firstAttribute="bottom" secondItem="X3L-ps-Kfn" secondAttribute="bottom" constant="5" id="gaL-Vr-C59"/>
                                             <constraint firstItem="Y2m-sk-exr" firstAttribute="centerX" secondItem="jJZ-VI-vrX" secondAttribute="centerX" id="iti-VX-dyt"/>
                                             <constraint firstItem="eFe-UV-ppa" firstAttribute="top" secondItem="Uhe-UY-l9S" secondAttribute="bottom" constant="20" id="jUi-dh-MC7"/>
                                             <constraint firstItem="eFe-UV-ppa" firstAttribute="trailing" secondItem="Uhe-UY-l9S" secondAttribute="trailing" id="jtm-wB-bXY"/>
+                                            <constraint firstItem="X3L-ps-Kfn" firstAttribute="leading" secondItem="jJZ-VI-vrX" secondAttribute="leading" id="lUI-j0-Fp0"/>
                                             <constraint firstItem="xF2-9s-2uH" firstAttribute="leading" secondItem="161-Of-v3h" secondAttribute="leading" id="lYC-UH-Y5W"/>
                                             <constraint firstItem="bg8-OQ-zya" firstAttribute="leading" secondItem="qL9-kP-Rwu" secondAttribute="leading" id="nWa-h9-l9o"/>
                                             <constraint firstItem="bg8-OQ-zya" firstAttribute="top" secondItem="qL9-kP-Rwu" secondAttribute="bottom" constant="20" id="t6Q-DQ-h8T"/>
@@ -316,6 +328,9 @@
         </namedColor>
         <namedColor name="color_background">
             <color red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color_primary">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_primary">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
