@@ -11,7 +11,7 @@ import UIKit
 class CharacterPresenter: NSObject {
     
     private var userInterface: CharacterViewInterface?
-    private var character: Character?
+    private var character: CharacterData?
     private let dataNotFoundText = "Data not found :("
     
     init(userInterface: CharacterViewInterface) {
@@ -25,7 +25,7 @@ class CharacterPresenter: NSObject {
 // MARK: CharacterViewHandlerInterface
 
 extension CharacterPresenter: CharacterViewHandlerInterface {
-    func viewDidLoad(with character: Character?) {
+    func viewDidLoad(with character: CharacterData?) {
         self.character = character
         
         userInterface?.setNavigationTitle(with: character?.name ?? dataNotFoundText)

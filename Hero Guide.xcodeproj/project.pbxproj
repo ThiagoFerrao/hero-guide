@@ -12,7 +12,7 @@
 		AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9D420F28AA8008F38DD /* CharactersService.swift */; };
 		AF51D9D820F28AEB008F38DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9D720F28AEB008F38DD /* Constants.swift */; };
 		AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */; };
-		AF51D9DD20F28EE6008F38DD /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9DC20F28EE6008F38DD /* Character.swift */; };
+		AF51D9DD20F28EE6008F38DD /* CharacterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9DC20F28EE6008F38DD /* CharacterData.swift */; };
 		AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9E620F29776008F38DD /* GalleryViewInterface.swift */; };
 		AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9E820F297A9008F38DD /* GalleryViewHandlerInterface.swift */; };
 		AF51D9EB20F297BF008F38DD /* GalleryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9EA20F297BF008F38DD /* GalleryPresenter.swift */; };
@@ -35,6 +35,7 @@
 		AF5D3A0120F27F8C009DC102 /* Hero_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */; };
 		AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61420F42E2100334585 /* UIViewExtension.swift */; };
 		AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61920F434B600334585 /* CustomUIButton.swift */; };
+		AF8CB61E20F4394900334585 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61D20F4394900334585 /* CharacterTests.swift */; };
 		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +66,7 @@
 		AF51D9D420F28AA8008F38DD /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
 		AF51D9D720F28AEB008F38DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResultData.swift; sourceTree = "<group>"; };
-		AF51D9DC20F28EE6008F38DD /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		AF51D9DC20F28EE6008F38DD /* CharacterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterData.swift; sourceTree = "<group>"; };
 		AF51D9E620F29776008F38DD /* GalleryViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewInterface.swift; sourceTree = "<group>"; };
 		AF51D9E820F297A9008F38DD /* GalleryViewHandlerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewHandlerInterface.swift; sourceTree = "<group>"; };
 		AF51D9EA20F297BF008F38DD /* GalleryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPresenter.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		AF5D3A0220F27F8C009DC102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF8CB61420F42E2100334585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AF8CB61920F434B600334585 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		AF8CB61D20F4394900334585 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
 		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9DA20F28E85008F38DD /* CharactersResultData.swift */,
-				AF51D9DC20F28EE6008F38DD /* Character.swift */,
+				AF51D9DC20F28EE6008F38DD /* CharacterData.swift */,
 				AF51D9FD20F30CA4008F38DD /* ResourceData.swift */,
 				AF51D9FF20F32008008F38DD /* ResourceURL.swift */,
 			);
@@ -289,6 +291,7 @@
 		AF5D39F420F27F8C009DC102 /* Hero GuideTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF8CB61C20F4393800334585 /* Models */,
 				AF5D39F520F27F8C009DC102 /* Hero_GuideTests.swift */,
 				AF5D39F720F27F8C009DC102 /* Info.plist */,
 			);
@@ -310,6 +313,14 @@
 				AF8CB61920F434B600334585 /* CustomUIButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		AF8CB61C20F4393800334585 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AF8CB61D20F4394900334585 /* CharacterTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DFD6CCF64B4526496847F64D /* Frameworks */ = {
@@ -591,7 +602,7 @@
 				AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */,
 				AF51D9F620F2E2A9008F38DD /* CharacterViewController.swift in Sources */,
 				AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */,
-				AF51D9DD20F28EE6008F38DD /* Character.swift in Sources */,
+				AF51D9DD20F28EE6008F38DD /* CharacterData.swift in Sources */,
 				AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */,
 				AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */,
 				AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */,
@@ -609,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5D39F620F27F8C009DC102 /* Hero_GuideTests.swift in Sources */,
+				AF8CB61E20F4394900334585 /* CharacterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

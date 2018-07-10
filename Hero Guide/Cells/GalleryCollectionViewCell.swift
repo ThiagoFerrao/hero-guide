@@ -25,7 +25,7 @@ class GalleryCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    var character: Character? {
+    var character: CharacterData? {
         didSet {
             characterNameLabel.text = character?.name
             

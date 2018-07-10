@@ -48,7 +48,7 @@ extension GalleryPresenter: GalleryViewHandlerInterface {
         interactorInput?.getMoreCharacters()
     }
     
-    func characterSelected(_ characterSelected: Character) {
+    func characterSelected(_ characterSelected: CharacterData) {
         userInterface?.presentCharacterScreen(send: characterSelected)
     }
 }
@@ -57,7 +57,7 @@ extension GalleryPresenter: GalleryViewHandlerInterface {
 // MARK: GalleryInteractorOutput
 
 extension GalleryPresenter: GalleryInteractorOutput {
-    func loadCharacters(_ characterList: [Character]) {
+    func loadCharacters(_ characterList: [CharacterData]) {
         userInterface?.updateCharacterList(characterList)
         finishFullScreenLoading()
         userInterface?.endRefreshing()

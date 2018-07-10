@@ -14,7 +14,7 @@ class CharactersService: BaseService {
     static let shared = CharactersService()
     
     internal func getCharacters(limit: Int, offSet: Int, timeStamp: String, apiKey: String, hash: String
-        , success: @escaping ([Character]) -> Void
+        , success: @escaping ([CharacterData]) -> Void
         , failure: @escaping FAILURE_HANDLER) {
         
         let requestHeader = self.createHeader()

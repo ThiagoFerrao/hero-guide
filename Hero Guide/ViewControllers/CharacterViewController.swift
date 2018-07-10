@@ -20,7 +20,7 @@ class CharacterViewController: UIViewController {
         eventHandler?.readWikiButtonClicked()
     }
     
-    var character: Character?
+    var character: CharacterData?
     private var eventHandler: CharacterViewHandlerInterface?
     
     override func viewDidLoad() {

@@ -1,5 +1,5 @@
 //
-//  Character.swift
+//  CharacterData.swift
 //  Hero Guide
 //
 //  Created by Thiago Ferrão on 08/07/18.
@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Character: Mappable {
+class CharacterData: Mappable {
     var name: String?
     var description: String?
     var thumbnailPath: String?

@@ -16,7 +16,7 @@ class GalleryViewController: UIViewController {
     
     private var eventHandler: GalleryViewHandlerInterface?
     private let refreshControl = UIRefreshControl()
-    private var characterList = [Character]()
+    private var characterList = [CharacterData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class GalleryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case Constants.SEGUE_IDENTIFIER.TO_CHARACTER:
-            let sendCharacter = sender as? Character
+            let sendCharacter = sender as? CharacterData
             let characterVC = segue.destination as? CharacterViewController
             
             characterVC?.character = sendCharacter
@@ -87,12 +87,12 @@ extension GalleryViewController: GalleryViewInterface {
         present(alertController, animated: true, completion: nil)
     }
     
-    func updateCharacterList(_ newCharacterList: [Character]) {
+    func updateCharacterList(_ newCharacterList: [CharacterData]) {
         characterList.append(contentsOf: newCharacterList)
         collectionView.reloadData()
     }
     
-    func presentCharacterScreen(send sendCharacter: Character) {
+    func presentCharacterScreen(send sendCharacter: CharacterData) {
         performSegue(withIdentifier: Constants.SEGUE_IDENTIFIER.TO_CHARACTER, sender: sendCharacter)
     }
 }

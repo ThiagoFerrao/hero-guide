@@ -17,6 +17,6 @@ protocol GalleryViewInterface {
     func disableRefreshingControl()
     func setupContent()
     func showAlert(_ alertController: UIAlertController)
-    func updateCharacterList(_ newCharacterList: [Character])
-    func presentCharacterScreen(send sendCharacter: Character)
+    func updateCharacterList(_ newCharacterList: [CharacterData])
+    func presentCharacterScreen(send sendCharacter: CharacterData)
 }
