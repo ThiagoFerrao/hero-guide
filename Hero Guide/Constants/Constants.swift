@@ -6,7 +6,7 @@
 //  Copyright © 2018 Thiago Ferrão. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Constants {
     
@@ -57,5 +57,10 @@ struct Constants {
             static let STANDARD = "/standard_amazing"
             static let LANDSCAPE = "/landscape_incredible"
         }
+    }
+    
+    struct ALPHA {
+        static let ENABLE : CGFloat = 1
+        static let DISABLE : CGFloat = 0.5
     }
 }

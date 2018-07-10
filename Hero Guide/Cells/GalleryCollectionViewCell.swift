@@ -14,6 +14,17 @@ class GalleryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var characterImage: UIImageView!
     @IBOutlet weak var characterNameLabel: UILabel!
     
+    override var isHighlighted: Bool {
+        didSet {
+            guard isHighlighted else {
+                contentView.alpha = Constants.ALPHA.ENABLE
+                return
+            }
+            
+            contentView.alpha = Constants.ALPHA.DISABLE
+        }
+    }
+    
     var character: Character? {
         didSet {
             characterNameLabel.text = character?.name
