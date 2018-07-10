@@ -33,6 +33,7 @@
 		AF5D39EB20F27F8C009DC102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D39E920F27F8C009DC102 /* LaunchScreen.storyboard */; };
 		AF5D39F620F27F8C009DC102 /* Hero_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39F520F27F8C009DC102 /* Hero_GuideTests.swift */; };
 		AF5D3A0120F27F8C009DC102 /* Hero_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */; };
+		AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61420F42E2100334585 /* UIViewExtension.swift */; };
 		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		AF5D39FC20F27F8C009DC102 /* Hero GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hero GuideUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero_GuideUITests.swift; sourceTree = "<group>"; };
 		AF5D3A0220F27F8C009DC102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8CB61420F42E2100334585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9F320F2B209008F38DD /* DateExtension.swift */,
+				AF8CB61420F42E2100334585 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */,
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,
 				AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */,
+				AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */,
 				AF51D9F120F298BD008F38DD /* GalleryCollectionViewCell.swift in Sources */,
 				AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */,
 			);
