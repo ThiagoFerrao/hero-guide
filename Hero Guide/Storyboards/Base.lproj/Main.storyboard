@@ -207,7 +207,7 @@
                                                 <color key="textColor" name="color_primary"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2m-sk-exr" userLabel="Read More on the Marvel Wiki">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2m-sk-exr" userLabel="Read More on the Marvel Wiki" customClass="CustomUIButton" customModule="Hero_Guide" customModuleProvider="target">
                                                 <rect key="frame" x="62" y="471" width="250" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="WqR-fh-ISU"/>

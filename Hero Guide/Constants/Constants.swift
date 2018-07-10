@@ -61,6 +61,6 @@ struct Constants {
     
     struct ALPHA {
         static let ENABLE : CGFloat = 1
-        static let DISABLE : CGFloat = 0.5
+        static let DISABLE : CGFloat = 0.2
     }
 }

@@ -34,6 +34,7 @@
 		AF5D39F620F27F8C009DC102 /* Hero_GuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D39F520F27F8C009DC102 /* Hero_GuideTests.swift */; };
 		AF5D3A0120F27F8C009DC102 /* Hero_GuideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */; };
 		AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61420F42E2100334585 /* UIViewExtension.swift */; };
+		AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61920F434B600334585 /* CustomUIButton.swift */; };
 		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		AF5D3A0020F27F8C009DC102 /* Hero_GuideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero_GuideUITests.swift; sourceTree = "<group>"; };
 		AF5D3A0220F27F8C009DC102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF8CB61420F42E2100334585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		AF8CB61920F434B600334585 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +276,7 @@
 				AF51D9D120F28A2B008F38DD /* Services */,
 				AF51D9D920F28E23008F38DD /* Models */,
 				AF51D9F220F2B1F3008F38DD /* Extensions */,
+				AF8CB61820F4349000334585 /* CustomViews */,
 				AF51D9D620F28AD6008F38DD /* Constants */,
 				AF51D9DE20F29285008F38DD /* Storyboards */,
 				AF5D39E020F27F8C009DC102 /* AppDelegate.swift */,
@@ -299,6 +302,14 @@
 				AF5D3A0220F27F8C009DC102 /* Info.plist */,
 			);
 			path = "Hero GuideUITests";
+			sourceTree = "<group>";
+		};
+		AF8CB61820F4349000334585 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				AF8CB61920F434B600334585 /* CustomUIButton.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		DFD6CCF64B4526496847F64D /* Frameworks */ = {
@@ -574,6 +585,7 @@
 				AF51DA0020F32008008F38DD /* ResourceURL.swift in Sources */,
 				AF51D9F420F2B209008F38DD /* DateExtension.swift in Sources */,
 				AF51D9EB20F297BF008F38DD /* GalleryPresenter.swift in Sources */,
+				AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */,
 				AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */,
 				AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */,
 				AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */,
