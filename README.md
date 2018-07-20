@@ -8,3 +8,9 @@
 * SwiftHash (https://github.com/onmyway133/SwiftHash) - Used to make the creation of a md5 digest easier. 
 * Alamofire (https://github.com/Alamofire/Alamofire) - Used to manage all the requests of the utilized RESTful API. 
 * ObjectMapper (https://github.com/Hearst-DD/ObjectMapper) - Used to convert JSON values to model classes.
+### Screenshots
+<p float="center">
+<img src="screenshots/Splash.png" width="200" /> 
+<img src="screenshots/Gallery.png" width="200" />
+<img src="screenshots/Details.png" width="200" />
+</p>
