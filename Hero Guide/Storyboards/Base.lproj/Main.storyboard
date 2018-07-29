@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="108" y="117"/>
         </scene>
-        <!--Gallery Search Controller-->
+        <!--Gallery Search-->
         <scene sceneID="Uhf-Hy-wNg">
             <objects>
-                <viewController id="i6i-Lx-W6X" customClass="GallerySearchController" customModule="Hero_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GallerySearchController" title="Gallery Search" id="i6i-Lx-W6X" customClass="GallerySearchController" customModule="Hero_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RJv-EQ-JkY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +196,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="color_background"/>
                         <constraints>
                             <constraint firstItem="sgC-0q-qNS" firstAttribute="top" secondItem="Z5Q-fk-rcf" secondAttribute="top" id="EPj-Qc-NVR"/>
                             <constraint firstItem="sgC-0q-qNS" firstAttribute="leading" secondItem="Z5Q-fk-rcf" secondAttribute="leading" id="Z8v-UQ-NMb"/>
@@ -206,7 +206,7 @@
                         <viewLayoutGuide key="safeArea" id="Z5Q-fk-rcf"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="sgC-0q-qNS" id="6J7-al-jgw"/>
+                        <outlet property="tableView" destination="sgC-0q-qNS" id="sNp-Cv-fwU"/>
                         <segue destination="b7a-a3-pHW" kind="show" identifier="SegueToCharacterVC" id="Dd0-8U-5Ie"/>
                     </connections>
                 </viewController>
@@ -419,8 +419,8 @@
         <namedColor name="color_accent">
             <color red="0.70196078431372544" green="0.23921568627450981" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="color_accent">
-            <color red="0.70196078431372544" green="0.23921568627450981" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="color_background">
+            <color red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color_background">
             <color red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

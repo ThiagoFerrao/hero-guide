@@ -14,10 +14,6 @@ class GallerySearchController: UIViewController {
     
     private var characterSearchList = [CharacterData]()
     
-    override func viewDidLoad() {
-        
-    }
-    
     
     // MARK: SEGUE
     
@@ -56,7 +52,7 @@ extension GallerySearchController: UITableViewDataSource {
 
 extension GallerySearchController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        performSegue(withIdentifier: Constants.SEGUE_IDENTIFIER.TO_CHARACTER, sender: characterSearchList[indexPath.row])
     }
 }
 

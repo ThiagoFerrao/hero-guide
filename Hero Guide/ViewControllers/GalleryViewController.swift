@@ -78,7 +78,8 @@ extension GalleryViewController: GalleryViewInterface {
     }
     
     func setupContent() {
-        let gallerySearchController = GallerySearchController()
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let gallerySearchController = storyBoard.instantiateViewController(withIdentifier: "GallerySearchController") as! GallerySearchController
         let searchController = UISearchController(searchResultsController: gallerySearchController)
         searchController.searchBar.delegate = gallerySearchController
         navigationItem.searchController = searchController
