@@ -190,6 +190,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="i6i-Lx-W6X" id="h6f-Jf-D8y"/>
+                                    <outlet property="delegate" destination="i6i-Lx-W6X" id="zrd-95-z7t"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ai-NN-GFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108" y="805"/>
+            <point key="canvasLocation" x="108" y="887"/>
         </scene>
         <!--Character-->
         <scene sceneID="Qwu-Xg-KeQ">
