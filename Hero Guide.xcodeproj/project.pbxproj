@@ -36,6 +36,8 @@
 		AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61420F42E2100334585 /* UIViewExtension.swift */; };
 		AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61920F434B600334585 /* CustomUIButton.swift */; };
 		AF8CB61E20F4394900334585 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61D20F4394900334585 /* CharacterTests.swift */; };
+		AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D6210E20C200634D3D /* GallerySearchCell.swift */; };
+		AFB802D9210E210C00634D3D /* GallerySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D8210E210C00634D3D /* GallerySearchController.swift */; };
 		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		AF8CB61420F42E2100334585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AF8CB61920F434B600334585 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		AF8CB61D20F4394900334585 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
+		AFB802D6210E20C200634D3D /* GallerySearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchCell.swift; sourceTree = "<group>"; };
+		AFB802D8210E210C00634D3D /* GallerySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchController.swift; sourceTree = "<group>"; };
 		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */,
+				AFB802D8210E210C00634D3D /* GallerySearchController.swift */,
 				AF51D9F520F2E2A9008F38DD /* CharacterViewController.swift */,
 			);
 			path = ViewControllers;
@@ -196,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9F020F298BD008F38DD /* GalleryCollectionViewCell.swift */,
+				AFB802D6210E20C200634D3D /* GallerySearchCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -601,12 +607,14 @@
 				AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */,
 				AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */,
 				AF51D9F620F2E2A9008F38DD /* CharacterViewController.swift in Sources */,
+				AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */,
 				AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */,
 				AF51D9DD20F28EE6008F38DD /* CharacterData.swift in Sources */,
 				AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */,
 				AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */,
 				AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */,
 				AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */,
+				AFB802D9210E210C00634D3D /* GallerySearchController.swift in Sources */,
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,
 				AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */,
 				AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */,

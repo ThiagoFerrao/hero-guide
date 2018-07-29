@@ -78,6 +78,12 @@ extension GalleryViewController: GalleryViewInterface {
     }
     
     func setupContent() {
+        let gallerySearchController = GallerySearchController()
+        let searchController = UISearchController(searchResultsController: gallerySearchController)
+        searchController.searchBar.delegate = gallerySearchController
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
         refreshControl.tintColor = UIColor(named: Constants.COLOR.ACCENT)
         refreshControl.addTarget(self, action: #selector(refreshCollectionRequested), for: .valueChanged)
         collectionView.bottomRefreshControl = refreshControl
