@@ -74,6 +74,18 @@ extension GallerySearchController: UISearchResultsUpdating {
 
 extension GallerySearchController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        guard let searchValue = searchBar.text, !searchValue.isEmpty else {
+            return
+        }
         
+        CharactersService.shared.searchCharacters(searchValue: searchValue
+            , success: { (characterList) in
+                self.characterSearchList = characterList
+                self.tableView.reloadData()
+                
+        }) { (error) in
+            self.characterSearchList.removeAll()
+            self.tableView.reloadData()
+        }
     }
 }

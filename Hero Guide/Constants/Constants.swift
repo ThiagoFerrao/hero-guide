@@ -28,6 +28,7 @@ struct Constants {
             static let API_KEY = "apikey"
             static let HASH = "hash"
             static let TIME_STAMP = "ts"
+            static let NAME = "name"
         }
         
         struct LIMIT {

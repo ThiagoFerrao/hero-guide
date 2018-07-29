@@ -13,19 +13,45 @@ class CharactersService: BaseService {
     
     static let shared = CharactersService()
     
-    internal func getCharacters(limit: Int, offSet: Int, timeStamp: String, apiKey: String, hash: String
+    internal func allCharacters(limit: Int, offSet: Int
         , success: @escaping ([CharacterData]) -> Void
         , failure: @escaping FAILURE_HANDLER) {
         
         let requestHeader = self.createHeader()
-        let requestUrl = self.createUrlWithPath(Constants.API.PATH.CHARACTERS)
         let requestParameters : [String : Any] = [
             Constants.API.PARAMETER.LIMIT : limit,
             Constants.API.PARAMETER.OFFSET : offSet,
+        ]
+        
+        getCharacters(requestHeader: requestHeader, requestParameters: requestParameters, success: success, failure: failure)
+    }
+    
+    internal func searchCharacters(searchValue: String
+        , success: @escaping ([CharacterData]) -> Void
+        , failure: @escaping FAILURE_HANDLER) {
+        
+        let requestHeader = self.createHeader()
+        let requestParameters : [String : Any] = [
+            Constants.API.PARAMETER.NAME : searchValue,
+        ]
+        
+        getCharacters(requestHeader: requestHeader, requestParameters: requestParameters, success: success, failure: failure)
+    }
+    
+    private func getCharacters(requestHeader: [String : String], requestParameters: [String : Any]
+        , success: @escaping ([CharacterData]) -> Void
+        , failure: @escaping FAILURE_HANDLER) {
+        
+        let (timeStamp, hash, apiKey) = getRequestTimeStampAndHashAndPublicKey()
+        
+        let defaultRequestParameters = [
             Constants.API.PARAMETER.API_KEY : apiKey,
             Constants.API.PARAMETER.HASH : hash,
             Constants.API.PARAMETER.TIME_STAMP : timeStamp
         ]
+        
+        let requestUrl = self.createUrlWithPath(Constants.API.PATH.CHARACTERS)
+        let requestParameters = requestParameters.merging(defaultRequestParameters) { (current, _) in current }
         
         Alamofire.request(requestUrl, method: HTTPMethod.get, parameters: requestParameters, encoding: URLEncoding.queryString, headers: requestHeader)
             .validate(statusCode: SUCCESS_STATUS_CODE)
