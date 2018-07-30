@@ -1,5 +1,5 @@
 //
-//  GallerySearchController.swift
+//  GallerySearchViewController.swift
 //  Hero Guide
 //
 //  Created by Thiago Ferrão on 29/07/18.
@@ -8,24 +8,63 @@
 
 import UIKit
 
-class GallerySearchController: UIViewController {
+class GallerySearchViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     public var searchDelegate: SearchDelegate?
+    private var eventHandler: GallerySearchViewHandlerInterface?
     private var characterSearchList = [CharacterData]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(named: Constants.COLOR.BACKGROUND)?.withAlphaComponent(0.75)
+        eventHandler = GallerySearchPresenter(userInterface: self)
+        eventHandler?.viewDidLoad()
+    }
+}
+
+
+// MARK: GallerySearchViewInterface
+
+extension GallerySearchViewController: GallerySearchViewInterface {
+    func showLoading() {
+        
+    }
+    
+    func hideLoading() {
+        
+    }
+    
+    func showTableView() {
+        
+    }
+    
+    func hideTableView() {
+        
+    }
+    
+    func setupContent() {
+        view.backgroundColor = UIColor(named: Constants.COLOR.BACKGROUND)?.withAlphaComponent(0.75)
+    }
+    
+    func showMessage(_ message: String) {
+        
+    }
+    
+    func updateCharacterSearchList(_ newCharacterSearchList: [CharacterData]) {
+        
+    }
+    
+    func presentCharacterScreen(send sendCharacter: CharacterData) {
+        
     }
 }
 
 
 // MARK: UITableViewDataSource
 
-extension GallerySearchController: UITableViewDataSource {
+extension GallerySearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return characterSearchList.count
     }
@@ -41,7 +80,7 @@ extension GallerySearchController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 
-extension GallerySearchController: UITableViewDelegate {
+extension GallerySearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         searchDelegate?.showCharacterScreen(send: characterSearchList[indexPath.row])
     }
@@ -50,7 +89,7 @@ extension GallerySearchController: UITableViewDelegate {
 
 // MARK: UISearchResultsUpdating
 
-extension GallerySearchController: UISearchResultsUpdating {
+extension GallerySearchViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         
     }
@@ -59,17 +98,17 @@ extension GallerySearchController: UISearchResultsUpdating {
 
 // MARK: UISearchResultsUpdating
 
-extension GallerySearchController: UISearchBarDelegate {
+extension GallerySearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            self.characterSearchList.removeAll()
-            self.tableView.reloadData()
+            characterSearchList.removeAll()
+            tableView.reloadData()
         }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.characterSearchList.removeAll()
-        self.tableView.reloadData()
+        characterSearchList.removeAll()
+        tableView.reloadData()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

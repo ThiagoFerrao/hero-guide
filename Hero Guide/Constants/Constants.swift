@@ -52,7 +52,7 @@ struct Constants {
     
     struct VIEW_CONTROLLER_IDENTIFIER {
         struct MAIN_STORYBOARD {
-            static let GALLERY_SEARCH_CONTROLLER = "GallerySearchController"
+            static let GALLERY_SEARCH = "GallerySearchViewController"
         }
     }
     
