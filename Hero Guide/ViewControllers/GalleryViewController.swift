@@ -28,6 +28,25 @@ class GalleryViewController: UIViewController {
     
     // MARK: Private Methods
     
+    private func setupSearchController() {
+        let mainStoryBoard = UIStoryboard(name: Constants.STORYBOARD_IDENTIFIER.MAIN, bundle: nil)
+        let gallerySearchVC = mainStoryBoard.instantiateViewController(withIdentifier: Constants.VIEW_CONTROLLER_IDENTIFIER.MAIN_STORYBOARD.GALLERY_SEARCH) as! GallerySearchViewController
+        gallerySearchVC.searchDelegate = self
+        
+        let searchController = UISearchController(searchResultsController: gallerySearchVC)
+        searchController.searchBar.placeholder = "Search by Hero Name"
+        searchController.searchBar.tintColor = UIColor.black
+        searchController.searchBar.delegate = gallerySearchVC
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
+    
+    private func setupBottomRefreshControl() {
+        refreshControl.tintColor = UIColor(named: Constants.COLOR.ACCENT)
+        refreshControl.addTarget(self, action: #selector(refreshCollectionRequested), for: .valueChanged)
+        collectionView.bottomRefreshControl = refreshControl
+    }
+    
     @objc private func refreshCollectionRequested() {
         eventHandler?.loadMoreData()
     }
@@ -78,17 +97,8 @@ extension GalleryViewController: GalleryViewInterface {
     }
     
     func setupContent() {
-        let storyBoard = UIStoryboard(name: Constants.STORYBOARD_IDENTIFIER.MAIN, bundle: nil)
-        let gallerySearchController = storyBoard.instantiateViewController(withIdentifier: Constants.VIEW_CONTROLLER_IDENTIFIER.MAIN_STORYBOARD.GALLERY_SEARCH) as! GallerySearchViewController
-        gallerySearchController.searchDelegate = self
-        let searchController = UISearchController(searchResultsController: gallerySearchController)
-        searchController.searchBar.delegate = gallerySearchController
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
-        
-        refreshControl.tintColor = UIColor(named: Constants.COLOR.ACCENT)
-        refreshControl.addTarget(self, action: #selector(refreshCollectionRequested), for: .valueChanged)
-        collectionView.bottomRefreshControl = refreshControl
+        setupSearchController()
+        setupBottomRefreshControl()
     }
     
     func showAlert(_ alertController: UIAlertController) {
