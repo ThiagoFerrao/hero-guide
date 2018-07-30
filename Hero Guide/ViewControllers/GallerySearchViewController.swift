@@ -109,14 +109,12 @@ extension GallerySearchViewController: UISearchResultsUpdating {
 extension GallerySearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            characterSearchList.removeAll()
-            tableView.reloadData()
+            eventHandler?.searchCanceled()
         }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        characterSearchList.removeAll()
-        tableView.reloadData()
+        eventHandler?.searchCanceled()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

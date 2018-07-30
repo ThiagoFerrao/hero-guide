@@ -12,4 +12,5 @@ protocol GallerySearchViewHandlerInterface {
     func viewDidLoad()
     func searchCharacter(_ searchValue: String)
     func characterSelected(_ characterSelected: CharacterData)
+    func searchCanceled()
 }

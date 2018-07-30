@@ -52,6 +52,11 @@ extension GallerySearchPresenter: GallerySearchViewHandlerInterface {
     func characterSelected(_ characterSelected: CharacterData) {
         userInterface?.presentCharacterScreen(send: characterSelected)
     }
+    
+    func searchCanceled() {
+        userInterface?.updateCharacterSearchList([CharacterData]())
+        userInterface?.showMessage("Enter the hero name and click in the keyboard's search button to do the search :)")
+    }
 }
 
 
