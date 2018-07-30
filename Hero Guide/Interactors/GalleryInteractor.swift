@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftHash
 
 class GalleryInteractor: NSObject {
     
@@ -30,14 +29,6 @@ class GalleryInteractor: NSObject {
     private func subtractCurrentOffSetValue() {
         currentOffSet -= 15
     }
-    
-    private func getRequestTimeStampAndHash() -> (String, String) {
-        let timeStamp = Date().getTimeStamp()
-        let privateKey = Constants.API.KEY.PRIVATE
-        let publicKey = Constants.API.KEY.PUBLIC
-        
-        return (timeStamp, MD5(timeStamp + privateKey + publicKey).lowercased())
-    }
 }
 
 
@@ -45,13 +36,8 @@ class GalleryInteractor: NSObject {
 
 extension GalleryInteractor: GalleryInteractorInput {
     func getCharacters() {
-        let (timeStamp, hash) = getRequestTimeStampAndHash()
-        
-        CharactersService.shared.getCharacters(limit: Constants.API.LIMIT.DEFAULT
+        CharactersService.shared.allCharacters(limit: Constants.API.LIMIT.DEFAULT
             , offSet: currentOffSet
-            , timeStamp: timeStamp
-            , apiKey: Constants.API.KEY.PUBLIC
-            , hash: hash
             , success: { (characterList) in
                 if characterList.isEmpty {
                     self.interactorOutput?.loadEmptyList()

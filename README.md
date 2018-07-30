@@ -12,5 +12,6 @@
 <p float="center">
 <img src="screenshots/Splash.png" width="200" /> 
 <img src="screenshots/Gallery.png" width="200" />
+<img src="screenshots/Search.png" width="200" />
 <img src="screenshots/Details.png" width="200" />
 </p>
