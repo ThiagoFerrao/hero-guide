@@ -85,7 +85,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data provided by Marvel. © 2014 Marvel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysa-G3-3rf">
-                                            <rect key="frame" x="0.0" y="0.0" width="595" height="20"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="370" height="20"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                             <color key="textColor" name="color_primary"/>
                                             <nil key="highlightedColor"/>
@@ -437,9 +437,6 @@
     </scenes>
     <resources>
         <image name="icon_background" width="1024" height="1024"/>
-        <namedColor name="color_accent">
-            <color red="0.70196078431372544" green="0.23921568627450981" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="color_accent">
             <color red="0.70196078431372544" green="0.23921568627450981" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
