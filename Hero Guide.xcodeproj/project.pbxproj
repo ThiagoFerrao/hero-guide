@@ -36,6 +36,14 @@
 		AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61420F42E2100334585 /* UIViewExtension.swift */; };
 		AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61920F434B600334585 /* CustomUIButton.swift */; };
 		AF8CB61E20F4394900334585 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61D20F4394900334585 /* CharacterTests.swift */; };
+		AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D6210E20C200634D3D /* GallerySearchCell.swift */; };
+		AFB802D9210E210C00634D3D /* GallerySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D8210E210C00634D3D /* GallerySearchViewController.swift */; };
+		AFB802DC210EA0E800634D3D /* SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802DB210EA0E800634D3D /* SearchDelegate.swift */; };
+		AFC0B6EE210F56BB0050DCB8 /* GallerySearchViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B6ED210F56BB0050DCB8 /* GallerySearchViewInterface.swift */; };
+		AFC0B6F0210F57A50050DCB8 /* GallerySearchViewHandlerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B6EF210F57A50050DCB8 /* GallerySearchViewHandlerInterface.swift */; };
+		AFC0B6F2210F58C30050DCB8 /* GallerySearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B6F1210F58C30050DCB8 /* GallerySearchPresenter.swift */; };
+		AFC0B6F4210F58DF0050DCB8 /* GallerySearchInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B6F3210F58DF0050DCB8 /* GallerySearchInteractorIO.swift */; };
+		AFC0B6F6210F58F20050DCB8 /* GallerySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B6F5210F58F20050DCB8 /* GallerySearchInteractor.swift */; };
 		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +104,14 @@
 		AF8CB61420F42E2100334585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AF8CB61920F434B600334585 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		AF8CB61D20F4394900334585 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
+		AFB802D6210E20C200634D3D /* GallerySearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchCell.swift; sourceTree = "<group>"; };
+		AFB802D8210E210C00634D3D /* GallerySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewController.swift; sourceTree = "<group>"; };
+		AFB802DB210EA0E800634D3D /* SearchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDelegate.swift; sourceTree = "<group>"; };
+		AFC0B6ED210F56BB0050DCB8 /* GallerySearchViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewInterface.swift; sourceTree = "<group>"; };
+		AFC0B6EF210F57A50050DCB8 /* GallerySearchViewHandlerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewHandlerInterface.swift; sourceTree = "<group>"; };
+		AFC0B6F1210F58C30050DCB8 /* GallerySearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchPresenter.swift; sourceTree = "<group>"; };
+		AFC0B6F3210F58DF0050DCB8 /* GallerySearchInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchInteractorIO.swift; sourceTree = "<group>"; };
+		AFC0B6F5210F58F20050DCB8 /* GallerySearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchInteractor.swift; sourceTree = "<group>"; };
 		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				AF5D39E220F27F8C009DC102 /* GalleryViewController.swift */,
+				AFB802D8210E210C00634D3D /* GallerySearchViewController.swift */,
 				AF51D9F520F2E2A9008F38DD /* CharacterViewController.swift */,
 			);
 			path = ViewControllers;
@@ -187,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9E620F29776008F38DD /* GalleryViewInterface.swift */,
+				AFC0B6ED210F56BB0050DCB8 /* GallerySearchViewInterface.swift */,
 				AF51D9F720F30A40008F38DD /* CharacterViewInterface.swift */,
 			);
 			path = Views;
@@ -196,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9F020F298BD008F38DD /* GalleryCollectionViewCell.swift */,
+				AFB802D6210E20C200634D3D /* GallerySearchCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -204,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9E820F297A9008F38DD /* GalleryViewHandlerInterface.swift */,
+				AFC0B6EF210F57A50050DCB8 /* GallerySearchViewHandlerInterface.swift */,
 				AF51D9F920F30A76008F38DD /* CharacterViewHandlerInterface.swift */,
 			);
 			path = ViewHandlers;
@@ -213,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9EA20F297BF008F38DD /* GalleryPresenter.swift */,
+				AFC0B6F1210F58C30050DCB8 /* GallerySearchPresenter.swift */,
 				AF51D9FB20F30A90008F38DD /* CharacterPresenter.swift */,
 			);
 			path = Presenters;
@@ -222,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9EC20F29804008F38DD /* GalleryInteractorIO.swift */,
+				AFC0B6F3210F58DF0050DCB8 /* GallerySearchInteractorIO.swift */,
 			);
 			path = InteractorIOs;
 			sourceTree = "<group>";
@@ -230,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				AF51D9EE20F29840008F38DD /* GalleryInteractor.swift */,
+				AFC0B6F5210F58F20050DCB8 /* GallerySearchInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -275,6 +298,7 @@
 				AF51D9E320F296F0008F38DD /* Presenters */,
 				AF51D9E420F296FB008F38DD /* InteractorIOs */,
 				AF51D9E520F29708008F38DD /* Interactors */,
+				AFB802DA210EA0C400634D3D /* Delegates */,
 				AF51D9D120F28A2B008F38DD /* Services */,
 				AF51D9D920F28E23008F38DD /* Models */,
 				AF51D9F220F2B1F3008F38DD /* Extensions */,
@@ -321,6 +345,14 @@
 				AF8CB61D20F4394900334585 /* CharacterTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB802DA210EA0C400634D3D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AFB802DB210EA0E800634D3D /* SearchDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		DFD6CCF64B4526496847F64D /* Frameworks */ = {
@@ -592,25 +624,33 @@
 			files = (
 				AF51D9FA20F30A76008F38DD /* CharacterViewHandlerInterface.swift in Sources */,
 				AF51D9F820F30A40008F38DD /* CharacterViewInterface.swift in Sources */,
+				AFC0B6F0210F57A50050DCB8 /* GallerySearchViewHandlerInterface.swift in Sources */,
 				AF51D9D820F28AEB008F38DD /* Constants.swift in Sources */,
 				AF51DA0020F32008008F38DD /* ResourceURL.swift in Sources */,
 				AF51D9F420F2B209008F38DD /* DateExtension.swift in Sources */,
 				AF51D9EB20F297BF008F38DD /* GalleryPresenter.swift in Sources */,
+				AFC0B6EE210F56BB0050DCB8 /* GallerySearchViewInterface.swift in Sources */,
 				AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */,
 				AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */,
 				AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */,
 				AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */,
 				AF51D9F620F2E2A9008F38DD /* CharacterViewController.swift in Sources */,
+				AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */,
 				AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */,
 				AF51D9DD20F28EE6008F38DD /* CharacterData.swift in Sources */,
 				AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */,
+				AFC0B6F6210F58F20050DCB8 /* GallerySearchInteractor.swift in Sources */,
 				AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */,
 				AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */,
 				AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */,
+				AFB802D9210E210C00634D3D /* GallerySearchViewController.swift in Sources */,
+				AFC0B6F2210F58C30050DCB8 /* GallerySearchPresenter.swift in Sources */,
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,
 				AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */,
 				AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */,
+				AFB802DC210EA0E800634D3D /* SearchDelegate.swift in Sources */,
 				AF51D9F120F298BD008F38DD /* GalleryCollectionViewCell.swift in Sources */,
+				AFC0B6F4210F58DF0050DCB8 /* GallerySearchInteractorIO.swift in Sources */,
 				AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

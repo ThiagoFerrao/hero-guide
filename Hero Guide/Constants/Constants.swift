@@ -28,6 +28,7 @@ struct Constants {
             static let API_KEY = "apikey"
             static let HASH = "hash"
             static let TIME_STAMP = "ts"
+            static let NAME = "name"
         }
         
         struct LIMIT {
@@ -41,7 +42,18 @@ struct Constants {
     
     struct REUSABLE_IDENTIFIER {
         static let GALLERY_CELL = "GalleryCell"
+        static let GALLERY_SEARCH_CELL = "GallerySearchCell"
         static let COPYRIGHT_FOOTER_VIEW = "CopyrightFooterView"
+    }
+    
+    struct STORYBOARD_IDENTIFIER {
+        static let MAIN = "Main"
+    }
+    
+    struct VIEW_CONTROLLER_IDENTIFIER {
+        struct MAIN_STORYBOARD {
+            static let GALLERY_SEARCH = "GallerySearchViewController"
+        }
     }
     
     struct COLOR {

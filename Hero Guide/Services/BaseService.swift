@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftHash
 
 class BaseService: NSObject {
     let SUCCESS_STATUS_CODE = 200...307
@@ -23,5 +24,13 @@ class BaseService: NSObject {
     
     internal func createUrlWithPath(_ path: String) -> String {
         return "\(Constants.API.URL)\(path)"
+    }
+    
+    internal func getRequestTimeStampAndHashAndPublicKey() -> (String, String, String) {
+        let timeStamp = Date().getTimeStamp()
+        let privateKey = Constants.API.KEY.PRIVATE
+        let publicKey = Constants.API.KEY.PUBLIC
+        
+        return (timeStamp, MD5(timeStamp + privateKey + publicKey).lowercased(), publicKey)
     }
 }

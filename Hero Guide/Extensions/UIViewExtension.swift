@@ -10,6 +10,26 @@ import UIKit
 
 extension UIView {
     
+    private func makeRound(isRound:  Bool) {
+        guard isRound else {
+            self.clipsToBounds = false
+            self.layer.cornerRadius = 0
+            return
+        }
+        
+        self.clipsToBounds = true
+        self.layer.cornerRadius = (self.frame.width + self.frame.height) / 4
+    }
+    
+    @IBInspectable var round: Bool {
+        set {
+            makeRound(isRound: newValue)
+        }
+        get {
+            return self.round
+        }
+    }
+    
     @IBInspectable var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
