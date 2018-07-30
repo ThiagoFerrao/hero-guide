@@ -24,6 +24,17 @@ class GallerySearchInteractor: NSObject {
 
 extension GallerySearchInteractor: GallerySearchInteractorInput {
     func searchCharacter(_ searchValue: String) {
-        
+        CharactersService.shared.searchCharacters(searchValue: searchValue
+            , success: { (characterList) in
+                guard !characterList.isEmpty else {
+                    self.interactorOutput?.loadEmptyList()
+                    return
+                }
+                
+                self.interactorOutput?.loadCharacters(characterList)
+                
+        }) { (error) in
+            self.interactorOutput?.requestFailed()
+        }
     }
 }

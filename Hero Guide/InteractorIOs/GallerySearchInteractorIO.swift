@@ -15,5 +15,5 @@ protocol GallerySearchInteractorInput {
 protocol GallerySearchInteractorOutput {
     func loadCharacters(_ characterSearchList: [CharacterData])
     func loadEmptyList()
-    func requestFailed(firstRequest: Bool)
+    func requestFailed()
 }

@@ -11,6 +11,8 @@ import UIKit
 class GallerySearchViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     public var searchDelegate: SearchDelegate?
     private var eventHandler: GallerySearchViewHandlerInterface?
@@ -29,19 +31,19 @@ class GallerySearchViewController: UIViewController {
 
 extension GallerySearchViewController: GallerySearchViewInterface {
     func showLoading() {
-        
+        loadingIndicator.isHidden = false
     }
     
     func hideLoading() {
-        
+        loadingIndicator.isHidden = true
     }
     
     func showTableView() {
-        
+        tableView.isHidden = false
     }
     
     func hideTableView() {
-        
+        tableView.isHidden = true
     }
     
     func setupContent() {
@@ -49,15 +51,21 @@ extension GallerySearchViewController: GallerySearchViewInterface {
     }
     
     func showMessage(_ message: String) {
-        
+        messageLabel.text = message
+        messageLabel.isHidden = false
+    }
+    
+    func hideMessage() {
+        messageLabel.isHidden = true
     }
     
     func updateCharacterSearchList(_ newCharacterSearchList: [CharacterData]) {
-        
+        characterSearchList = newCharacterSearchList
+        tableView.reloadData()
     }
     
     func presentCharacterScreen(send sendCharacter: CharacterData) {
-        
+        searchDelegate?.showCharacterScreen(send: sendCharacter)
     }
 }
 
@@ -82,7 +90,7 @@ extension GallerySearchViewController: UITableViewDataSource {
 
 extension GallerySearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        searchDelegate?.showCharacterScreen(send: characterSearchList[indexPath.row])
+        eventHandler?.characterSelected(characterSearchList[indexPath.row])
     }
 }
 
@@ -112,18 +120,6 @@ extension GallerySearchViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let searchValue = searchBar.text, !searchValue.isEmpty else {
-            return
-        }
-        
-        CharactersService.shared.searchCharacters(searchValue: searchValue
-            , success: { (characterList) in
-                self.characterSearchList = characterList
-                self.tableView.reloadData()
-                
-        }) { (error) in
-            self.characterSearchList.removeAll()
-            self.tableView.reloadData()
-        }
+        eventHandler?.searchCharacter(searchBar.text ?? "")
     }
 }

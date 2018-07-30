@@ -15,6 +15,7 @@ protocol GallerySearchViewInterface {
     func hideTableView()
     func setupContent()
     func showMessage(_ message: String)
+    func hideMessage()
     func updateCharacterSearchList(_ newCharacterSearchList: [CharacterData])
     func presentCharacterScreen(send sendCharacter: CharacterData)
 }
