@@ -46,6 +46,16 @@ struct Constants {
         static let COPYRIGHT_FOOTER_VIEW = "CopyrightFooterView"
     }
     
+    struct STORYBOARD_IDENTIFIER {
+        static let MAIN = "Main"
+    }
+    
+    struct VIEW_CONTROLLER_IDENTIFIER {
+        struct MAIN_STORYBOARD {
+            static let GALLERY_SEARCH_CONTROLLER = "GallerySearchController"
+        }
+    }
+    
     struct COLOR {
         static let PRIMARY = "color_primary"
         static let ACCENT = "color_accent"

@@ -78,8 +78,9 @@ extension GalleryViewController: GalleryViewInterface {
     }
     
     func setupContent() {
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let gallerySearchController = storyBoard.instantiateViewController(withIdentifier: "GallerySearchController") as! GallerySearchController
+        let storyBoard = UIStoryboard(name: Constants.STORYBOARD_IDENTIFIER.MAIN, bundle: nil)
+        let gallerySearchController = storyBoard.instantiateViewController(withIdentifier: Constants.VIEW_CONTROLLER_IDENTIFIER.MAIN_STORYBOARD.GALLERY_SEARCH_CONTROLLER) as! GallerySearchController
+        gallerySearchController.searchDelegate = self
         let searchController = UISearchController(searchResultsController: gallerySearchController)
         searchController.searchBar.delegate = gallerySearchController
         navigationItem.searchController = searchController
@@ -142,5 +143,14 @@ extension GalleryViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         eventHandler?.characterSelected(characterList[indexPath.row])
+    }
+}
+
+
+// MARK: SearchDelegate
+
+extension GalleryViewController: SearchDelegate {
+    func showCharacterScreen(send sendCharacter: CharacterData) {
+        presentCharacterScreen(send: sendCharacter)
     }
 }

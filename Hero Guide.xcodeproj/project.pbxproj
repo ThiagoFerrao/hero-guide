@@ -38,6 +38,7 @@
 		AF8CB61E20F4394900334585 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61D20F4394900334585 /* CharacterTests.swift */; };
 		AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D6210E20C200634D3D /* GallerySearchCell.swift */; };
 		AFB802D9210E210C00634D3D /* GallerySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D8210E210C00634D3D /* GallerySearchController.swift */; };
+		AFB802DC210EA0E800634D3D /* SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802DB210EA0E800634D3D /* SearchDelegate.swift */; };
 		CCF737D6CC0E69ABF7878883 /* Pods_Hero_Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		AF8CB61D20F4394900334585 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
 		AFB802D6210E20C200634D3D /* GallerySearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchCell.swift; sourceTree = "<group>"; };
 		AFB802D8210E210C00634D3D /* GallerySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchController.swift; sourceTree = "<group>"; };
+		AFB802DB210EA0E800634D3D /* SearchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDelegate.swift; sourceTree = "<group>"; };
 		DE790A449158B90753412AAB /* Pods-Hero Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,6 +283,7 @@
 				AF51D9E320F296F0008F38DD /* Presenters */,
 				AF51D9E420F296FB008F38DD /* InteractorIOs */,
 				AF51D9E520F29708008F38DD /* Interactors */,
+				AFB802DA210EA0C400634D3D /* Delegates */,
 				AF51D9D120F28A2B008F38DD /* Services */,
 				AF51D9D920F28E23008F38DD /* Models */,
 				AF51D9F220F2B1F3008F38DD /* Extensions */,
@@ -327,6 +330,14 @@
 				AF8CB61D20F4394900334585 /* CharacterTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB802DA210EA0C400634D3D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AFB802DB210EA0E800634D3D /* SearchDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		DFD6CCF64B4526496847F64D /* Frameworks */ = {
@@ -618,6 +629,7 @@
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,
 				AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */,
 				AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */,
+				AFB802DC210EA0E800634D3D /* SearchDelegate.swift in Sources */,
 				AF51D9F120F298BD008F38DD /* GalleryCollectionViewCell.swift in Sources */,
 				AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */,
 			);

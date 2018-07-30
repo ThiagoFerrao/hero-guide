@@ -12,22 +12,13 @@ class GallerySearchController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    public var searchDelegate: SearchDelegate?
     private var characterSearchList = [CharacterData]()
     
-    
-    // MARK: SEGUE
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case Constants.SEGUE_IDENTIFIER.TO_CHARACTER:
-            let sendCharacter = sender as? CharacterData
-            let characterVC = segue.destination as? CharacterViewController
-            
-            characterVC?.character = sendCharacter
-            
-        default:
-            return
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(named: Constants.COLOR.BACKGROUND)?.withAlphaComponent(0.75)
     }
 }
 
@@ -52,7 +43,7 @@ extension GallerySearchController: UITableViewDataSource {
 
 extension GallerySearchController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Constants.SEGUE_IDENTIFIER.TO_CHARACTER, sender: characterSearchList[indexPath.row])
+        searchDelegate?.showCharacterScreen(send: characterSearchList[indexPath.row])
     }
 }
 
@@ -69,7 +60,19 @@ extension GallerySearchController: UISearchResultsUpdating {
 // MARK: UISearchResultsUpdating
 
 extension GallerySearchController: UISearchBarDelegate {
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.characterSearchList.removeAll()
+            self.tableView.reloadData()
+        }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.characterSearchList.removeAll()
+        self.tableView.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let searchValue = searchBar.text, !searchValue.isEmpty else {
             return
         }
