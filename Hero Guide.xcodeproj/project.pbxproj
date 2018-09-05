@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		896FD3EAEE95337D02DAB659 /* Pods_Hero_Guide_Hero_GuideTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E70C4A577EEE9CE0EB67FBA /* Pods_Hero_Guide_Hero_GuideTests.framework */; };
+		AF44B231213F767B00A28CBD /* MappingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF44B230213F767B00A28CBD /* MappingContext.swift */; };
 		AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9D220F28A3E008F38DD /* BaseService.swift */; };
 		AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9D420F28AA8008F38DD /* CharactersService.swift */; };
 		AF51D9D820F28AEB008F38DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF51D9D720F28AEB008F38DD /* Constants.swift */; };
@@ -70,6 +71,7 @@
 		4739CC735D997955FD4E2BEB /* Pods-Hero Guide-Hero GuideTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide-Hero GuideTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide-Hero GuideTests/Pods-Hero Guide-Hero GuideTests.release.xcconfig"; sourceTree = "<group>"; };
 		5F07B910A3795EB003FF0F05 /* Pods_Hero_Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hero_Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B3AC92116D166700E1422C /* Pods-Hero Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hero Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hero Guide/Pods-Hero Guide.release.xcconfig"; sourceTree = "<group>"; };
+		AF44B230213F767B00A28CBD /* MappingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingContext.swift; sourceTree = "<group>"; };
 		AF51D9D220F28A3E008F38DD /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		AF51D9D420F28AA8008F38DD /* CharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersService.swift; sourceTree = "<group>"; };
 		AF51D9D720F28AEB008F38DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				AF51D9DC20F28EE6008F38DD /* CharacterData.swift */,
 				AF51D9FD20F30CA4008F38DD /* ResourceData.swift */,
 				AF51D9FF20F32008008F38DD /* ResourceURL.swift */,
+				AF44B230213F767B00A28CBD /* MappingContext.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 				AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */,
 				AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */,
 				AF5D39E120F27F8C009DC102 /* AppDelegate.swift in Sources */,
+				AF44B231213F767B00A28CBD /* MappingContext.swift in Sources */,
 				AFB802D9210E210C00634D3D /* GallerySearchViewController.swift in Sources */,
 				AFC0B6F2210F58C30050DCB8 /* GallerySearchPresenter.swift in Sources */,
 				AF51D9D320F28A3E008F38DD /* BaseService.swift in Sources */,

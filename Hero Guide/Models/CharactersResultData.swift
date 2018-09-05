@@ -9,8 +9,8 @@
 import Foundation
 import ObjectMapper
 
-class CharactersResultData: Mappable {
-    var characters: [CharacterData]?
+class CharactersResultData<T: Mappable>: Mappable {
+    var characters: [T]?
     
     required init?(map: Map) {
         

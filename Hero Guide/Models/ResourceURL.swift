@@ -11,7 +11,7 @@ import ObjectMapper
 
 class ResourceURL: Mappable {
     var type: String?
-    var url: String?
+    var url: URL?
     
     required init?(map: Map) {
         
@@ -19,6 +19,20 @@ class ResourceURL: Mappable {
     
     func mapping(map: Map) {
         type <- map["type"]
-        url <- map["url"]
+        
+        let transform = TransformOf<URL, String>(fromJSON: { (value: String?) -> URL? in
+            guard let value = value else {
+                return nil
+            }
+            return URL(string: value)
+            
+        }, toJSON: { (value: URL?) -> String? in
+            guard let value = value else {
+                return nil
+            }
+            return try? String(contentsOf: value)
+        })
+        
+        url <- (map["url"], transform)
     }
 }

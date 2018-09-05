@@ -19,17 +19,24 @@ class CharacterData: Mappable {
     var urls: [ResourceURL]?
     
     required init?(map: Map) {
-        
+        if let description = map.JSON["description"] as? String, description.isEmpty {
+//            return nil
+        }
     }
     
     func mapping(map: Map) {
         name <- map["name"]
+        
+        if let context = map.context as? MappingContext, let characterName = name {
+            name = context.characterNamePrefix + characterName
+        }
+        
         description <- map["description"]
         thumbnailPath <- map["thumbnail.path"]
         thumbnailExtension <- map["thumbnail.extension"]
         comics <- map["comics.items"]
-        series <- map["series.items"]
-        urls <- map["urls"]
+        series <- map["series->items", delimiter: "->"]
+        urls <- map["urls", nested: false]
     }
     
     
@@ -89,7 +96,7 @@ class CharacterData: Mappable {
             return nil
         }
         
-        var wikiURL: String?
+        var wikiURL: URL?
         
         for resourceURL in resourceURLList {
             if resourceURL.type == "wiki" {
@@ -98,6 +105,6 @@ class CharacterData: Mappable {
             }
         }
         
-        return URL(string: wikiURL ?? "")
+        return wikiURL
     }
 }

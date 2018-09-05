@@ -63,8 +63,8 @@ class CharactersService: BaseService {
                         failure(NSError(domain: "Unable to parse result to json", code: dataResponse.response?.statusCode ?? 0, userInfo: nil))
                         return
                     }
-                    
-                    guard let charactersResultData = CharactersResultData(JSON: jsonResult) else {
+                    let mappingContext = MappingContext()
+                    guard let charactersResultData = CharactersResultData<CharacterData>(JSON: jsonResult, context: mappingContext) else {
                         failure(NSError(domain: "Unable to parse json to model", code: dataResponse.response?.statusCode ?? 0, userInfo: nil))
                         return
                     }
