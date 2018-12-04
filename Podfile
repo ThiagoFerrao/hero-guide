@@ -11,6 +11,8 @@ target 'Hero Guide' do
   pod 'SwiftHash', '~> 2.0'
   pod 'Alamofire', '~> 4.7'
   pod 'ObjectMapper', '~> 3.2'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
 
   target 'Hero GuideTests' do
     inherit! :complete

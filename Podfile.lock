@@ -3,6 +3,9 @@ PODS:
   - CCBottomRefreshControl (0.5.2)
   - Kingfisher (4.8.0)
   - ObjectMapper (3.3.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
   - SwiftHash (2.0.1)
 
 DEPENDENCIES:
@@ -10,15 +13,29 @@ DEPENDENCIES:
   - CCBottomRefreshControl (~> 0.5)
   - Kingfisher (~> 4.0)
   - ObjectMapper (~> 3.2)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SwiftHash (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CCBottomRefreshControl
+    - Kingfisher
+    - ObjectMapper
+    - RxCocoa
+    - RxSwift
+    - SwiftHash
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   CCBottomRefreshControl: 389780b4488321c91d18f66a6da5ef9606df6de5
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SwiftHash: c805de5a434eacfa0dac7210745a50c55d7fe33d
 
-PODFILE CHECKSUM: 7508732524b8bffb9cd202158d179aa176016b46
+PODFILE CHECKSUM: ee6d187e43286793d5fb933e4d1f1690f7839497
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
