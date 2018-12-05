@@ -36,6 +36,13 @@
 		AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61420F42E2100334585 /* UIViewExtension.swift */; };
 		AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61920F434B600334585 /* CustomUIButton.swift */; };
 		AF8CB61E20F4394900334585 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8CB61D20F4394900334585 /* CharacterTests.swift */; };
+		AFA8463721B74B8F007D65E6 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8463621B74B8F007D65E6 /* HomeFactory.swift */; };
+		AFA8463E21B74C08007D65E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8463D21B74C08007D65E6 /* HomeViewController.swift */; };
+		AFA8464021B74C13007D65E6 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8463F21B74C13007D65E6 /* HomeCoordinator.swift */; };
+		AFA8464221B74C22007D65E6 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8464121B74C22007D65E6 /* HomePresenter.swift */; };
+		AFA8464421B74C32007D65E6 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8464321B74C32007D65E6 /* HomeInteractor.swift */; };
+		AFA8464621B74C3C007D65E6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8464521B74C3C007D65E6 /* HomeViewModel.swift */; };
+		AFA8464F21B75CB8007D65E6 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA8464E21B75CB8007D65E6 /* HomeProtocol.swift */; };
 		AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D6210E20C200634D3D /* GallerySearchCell.swift */; };
 		AFB802D9210E210C00634D3D /* GallerySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802D8210E210C00634D3D /* GallerySearchViewController.swift */; };
 		AFB802DC210EA0E800634D3D /* SearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB802DB210EA0E800634D3D /* SearchDelegate.swift */; };
@@ -104,6 +111,13 @@
 		AF8CB61420F42E2100334585 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AF8CB61920F434B600334585 /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		AF8CB61D20F4394900334585 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
+		AFA8463621B74B8F007D65E6 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		AFA8463D21B74C08007D65E6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AFA8463F21B74C13007D65E6 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		AFA8464121B74C22007D65E6 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AFA8464321B74C32007D65E6 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		AFA8464521B74C3C007D65E6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AFA8464E21B75CB8007D65E6 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
 		AFB802D6210E20C200634D3D /* GallerySearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchCell.swift; sourceTree = "<group>"; };
 		AFB802D8210E210C00634D3D /* GallerySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewController.swift; sourceTree = "<group>"; };
 		AFB802DB210EA0E800634D3D /* SearchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +305,7 @@
 		AF5D39DF20F27F8C009DC102 /* Hero Guide */ = {
 			isa = PBXGroup;
 			children = (
+				AFA8463421B74B72007D65E6 /* Home */,
 				AF51D9E020F296AE008F38DD /* Views */,
 				AF51D9DF20F2929C008F38DD /* ViewControllers */,
 				AF51D9E120F296D1008F38DD /* Cells */,
@@ -345,6 +360,76 @@
 				AF8CB61D20F4394900334585 /* CharacterTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AFA8463421B74B72007D65E6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8463521B74B80007D65E6 /* Factory */,
+				AFA8463C21B74BEB007D65E6 /* ViewModel */,
+				AFA8464B21B75A5B007D65E6 /* Protocol */,
+				AFA8463921B74BC1007D65E6 /* Coordinator */,
+				AFA8463B21B74BDF007D65E6 /* Interactor */,
+				AFA8463A21B74BD8007D65E6 /* Presenter */,
+				AFA8463821B74BB0007D65E6 /* ViewController */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AFA8463521B74B80007D65E6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8463621B74B8F007D65E6 /* HomeFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		AFA8463821B74BB0007D65E6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8463D21B74C08007D65E6 /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AFA8463921B74BC1007D65E6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8463F21B74C13007D65E6 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AFA8463A21B74BD8007D65E6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8464121B74C22007D65E6 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AFA8463B21B74BDF007D65E6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8464321B74C32007D65E6 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AFA8463C21B74BEB007D65E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8464521B74C3C007D65E6 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AFA8464B21B75A5B007D65E6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AFA8464E21B75CB8007D65E6 /* HomeProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		AFB802DA210EA0C400634D3D /* Delegates */ = {
@@ -609,12 +694,16 @@
 				AF8CB61A20F434B600334585 /* CustomUIButton.swift in Sources */,
 				AF51D9E720F29776008F38DD /* GalleryViewInterface.swift in Sources */,
 				AF51D9E920F297A9008F38DD /* GalleryViewHandlerInterface.swift in Sources */,
+				AFA8464221B74C22007D65E6 /* HomePresenter.swift in Sources */,
 				AF5D39E320F27F8C009DC102 /* GalleryViewController.swift in Sources */,
+				AFA8464421B74C32007D65E6 /* HomeInteractor.swift in Sources */,
 				AF51D9F620F2E2A9008F38DD /* CharacterViewController.swift in Sources */,
 				AFB802D7210E20C200634D3D /* GallerySearchCell.swift in Sources */,
 				AF51D9EF20F29840008F38DD /* GalleryInteractor.swift in Sources */,
 				AF51D9DD20F28EE6008F38DD /* CharacterData.swift in Sources */,
 				AF51D9ED20F29804008F38DD /* GalleryInteractorIO.swift in Sources */,
+				AFA8464F21B75CB8007D65E6 /* HomeProtocol.swift in Sources */,
+				AFA8464621B74C3C007D65E6 /* HomeViewModel.swift in Sources */,
 				AFC0B6F6210F58F20050DCB8 /* GallerySearchInteractor.swift in Sources */,
 				AF51D9FE20F30CA4008F38DD /* ResourceData.swift in Sources */,
 				AF51D9FC20F30A90008F38DD /* CharacterPresenter.swift in Sources */,
@@ -625,9 +714,12 @@
 				AF51D9DB20F28E85008F38DD /* CharactersResultData.swift in Sources */,
 				AF8CB61520F42E2100334585 /* UIViewExtension.swift in Sources */,
 				AFB802DC210EA0E800634D3D /* SearchDelegate.swift in Sources */,
+				AFA8463E21B74C08007D65E6 /* HomeViewController.swift in Sources */,
 				AF51D9F120F298BD008F38DD /* GalleryCollectionViewCell.swift in Sources */,
+				AFA8463721B74B8F007D65E6 /* HomeFactory.swift in Sources */,
 				AFC0B6F4210F58DF0050DCB8 /* GallerySearchInteractorIO.swift in Sources */,
 				AF51D9D520F28AA8008F38DD /* CharactersService.swift in Sources */,
+				AFA8464021B74C13007D65E6 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
